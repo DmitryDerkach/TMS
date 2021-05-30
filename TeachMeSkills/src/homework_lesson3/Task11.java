@@ -17,6 +17,7 @@ int [] mass = new int[a];
 		System.out.print(mass[i] + " ");
 	}
 System.out.println();
+sc.close();
 //
 System.out.println("IMPORTANT INFORMATION");
 System.out.println("In this particular case we won't recognize zero as a num that can divided by three");
