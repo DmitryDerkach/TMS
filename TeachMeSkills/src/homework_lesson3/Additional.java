@@ -1,5 +1,5 @@
 package homework_lesson3;
-
+//bubble sorting from lower to higher
 import java.util.Random;
 import java.util.Scanner;
 
