@@ -32,7 +32,7 @@ public static void main(String[] args) {
           }
       }
 
-      System.out.println("\nIn the array even " + ((evenCount>1)? "numbers are " : "number is ") + evenCount); //использование тернарной операции
+      System.out.println("\nIn the array even " + ((evenCount>1)? "numbers are " : "number is ") + evenCount);  //Использование тернарной операции
 
       int[] arr2 = new int [evenCount];
 
@@ -43,7 +43,7 @@ public static void main(String[] args) {
           }
       }
 
-      for (int x: arr2) {
+      for (int x: arr2) {							//Enchanced for loop
           System.out.print(x + " ");
       }
 
