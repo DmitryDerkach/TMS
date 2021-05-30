@@ -16,6 +16,7 @@ double a = sc.nextDouble();
 		a = sc.nextDouble();
 		
 	}
+sc.close();	
 int b = (int)a;	
 int [] mass = new int[b];	
 	for(int i=0; i<mass.length; i++) {

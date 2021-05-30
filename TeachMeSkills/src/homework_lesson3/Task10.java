@@ -2,7 +2,6 @@ package homework_lesson3;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class Task10 {
 public static void main(String[] args) {
@@ -16,6 +15,7 @@ double a = sc.nextDouble();
 		System.out.print("You entered wrong number! Please enter correct number!: " );
 		a = sc.nextDouble();
 	}
+sc.close();	
 int b  = (int)a;	
 int [] mass = new int[b];	
 	for(int i=0; i<mass.length; i++) {

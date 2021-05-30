@@ -1,8 +1,6 @@
 package homework_lesson3;
 /*—оздайте массив из всех четных чисел от 2 до 20 и выведите элементы масисва на экран сначала в строку, отдел€€ один элемент от другого
  * пробелом, а затем в столбик(отдел€€ один жлемент от другого началом новой строки). ѕеред созданием массива подумайте , какого он будет размера*/
-import java.util.Scanner;
-import java.util.Random;
 
 public class Task1 {
 public static void main(String[] args) {
@@ -33,7 +31,7 @@ public static void main(String[] args) {
 	
 	System.out.println();
 //Ўаг 7. ѕровер€ем заполнение второго массива четными числами
-	System.out.println("New arrays with evens only:");
+	System.out.println("New array with evens only:");
 	for(int i = 0; i<10; i++) {
 		System.out.print(mass2[i] + " ");
 	}

@@ -21,7 +21,7 @@ public static void main(String[] args) {
           System.out.print("Reenter it: ");
           n = sc.nextInt();
       }
-
+      sc.close();
       int[] arr1 = new int[n];
 
       for (int i=0; i<arr1.length; i++) {
