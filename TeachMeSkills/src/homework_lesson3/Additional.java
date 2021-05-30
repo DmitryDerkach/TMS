@@ -31,7 +31,7 @@ public class Additional {
 					
 				}
 				
-				for (int k = 0; k<num; k++) {          //Вывожу на экран результат одной прокрутки 
+				for (int k = 0; k<num; k++) {          //Вывожу на экран результат только одной прокрутки 
 				System.out.print(mass[k] + " ");
 				}
 				System.out.print("    ");
