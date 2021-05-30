@@ -31,7 +31,7 @@ System.out.print("Generating array #2 that contains only odd num-s from array #1
 int j = 0;// Индексы в массиве № 2
 int k = 1;// Размер массива №2
 	for (int i = 0; i<mass.length; i++) {
-		mark:if(mass[i] % 2 ==0) {
+		mark:if(mass[i] % 2 == 0) {
 			for(int z = 0; z<mass.length;) {   						//Тут вообще какое угодно условие можно было прописать
 				int [] mass2 = new int[k];
 				mass2[j] = mass[i];
