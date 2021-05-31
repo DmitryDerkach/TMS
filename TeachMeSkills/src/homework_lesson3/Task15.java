@@ -30,10 +30,5 @@ System.out.println("Transformed array: ");
 	for (int i = 0; i < mass.length; i++) {
 		System.out.print(mass[i] + " ");
 	}
-
-
-
-
-
 }
 }
