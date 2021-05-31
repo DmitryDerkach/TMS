@@ -24,7 +24,6 @@ boolean prove = false;
 		} 
 				
 	}
-	
 	if (prove == false) {
 		System.out.println("Array IS strictly ascending sequence");
 	}
