@@ -137,9 +137,10 @@ System.out.println("Отсортированный по убыванию");
 for (int i = 0; i<n; i++) {
 	System.out.print(mass[i] + " ");
 }
+sc.close();
 
-
-} //Воид реверс вставляем ЗА мейном, но В классе
+}
+//Воид реверс вставляем ЗА мейном, но В классе
 public static void reverse(int[] input) 
 { int last = input.length - 1; 
 int middle = input.length / 2; 
