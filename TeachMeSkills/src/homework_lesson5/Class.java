@@ -1,5 +1,5 @@
 package homework_lesson5;
-//В этом пэкэджэ должны быть задания с листочка, начинающегося фразой Класс Phone
+// Р—РґРµСЃСЊ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊСЊ Р·Р°РґР°РЅРёСЏ СЃ Р»РёСЃС‚РѕС‡РєР° Phone
 public class Class {
 
 	public static void main(String[] args) {
