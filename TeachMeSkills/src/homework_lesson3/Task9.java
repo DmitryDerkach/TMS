@@ -31,17 +31,17 @@ if (mass.length % 2 !=0) {
 	System.out.println("Since the array consists of an odd number of numbers, the boundary number will not be taken into account when calculating the sums of the halves");
 	
 }
-//Если массив четный
+//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 int wholesum = 0;
 int sumleft = 0;
 int sumright = 0;
 
-for(int i=0; i<mass.length; i++) {   //Верно для обоих
+for(int i=0; i<mass.length; i++) {   //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	wholesum += mass[i];
 }
 
 if (mass.length % 2 == 0) {
-	for (int i = 0; i<mass.length/2; i++) { 	//Для четного массива
+	for (int i = 0; i<mass.length/2; i++) { 	//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			sumleft += mass[i];
 	}
 			sumright = wholesum - sumleft;
