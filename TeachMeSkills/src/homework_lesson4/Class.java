@@ -1,5 +1,5 @@
 package homework_lesson4;
-
+//В этом пэкэджэ должны быть задания 1-5 по многомерным массивам
 public class Class {
 public static void main(String[] args) {
 	
