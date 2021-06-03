@@ -10,10 +10,11 @@ String сore;
  protected int hdd;
  protected int resourse;
  
- private boolean live = true;
+ private boolean conditioncheck = true;
  private boolean boot = false; 
- //private int liveresourse = 5;
-	 
+//private int liveresourse = 5;
+//private int on;
+//private int off;
  Computer(String a, int b, int c){
 	 сore = a;
 	 ram = b;
@@ -30,31 +31,33 @@ String сore;
  }
   
  void turnOn(){
+	 
 	 boot = true;
-	 System.out.println("Попытка включения компьютера. Введите число 0 или 1");
-	 if (live == false) {								//Добавил оператор ветвления для проверки, сгорел компьютер или нет. Ненужный break убрал
+	 System.out.println("Попытка включения компьютера");
+	 if (conditioncheck == false) {						
 		 System.out.println("Ваш компьютер больше не запустится. Он сгорел");
 	 } else {
+	 System.out.println("Введите число 0 или 1");	 
 	 Scanner sc = new Scanner(System.in);
 	 int a = sc.nextInt();
 	 Random r = new Random();
 	 int b = r.nextInt(2);
 	 if (b == a) {
-		 System.out.println("Компьютер включен.Ресурс компьютера снижен на 1 Хотите выключить его? Введите 1, если Да и 0, если нет");
+		 System.out.println("Компьютер включен. Хотите выключить его? Введите 1, если <<Да>> и 0, если <<Нет>>");
 		 int c = sc.nextInt();
 		 	if (c > 0) {			
-		 		turnOff();			// Убрал void, поставил скобки
+		 		turnOff();			
 		 	} else {
-		 		System.out.println("Компьютер находится в ждущем режиме.");
+		 		System.out.println("Компьютер находится в ждущем режиме");
 		 	}
 	 	} else {
-		 System.out.println("Ваш компьютер сгорел. Ваш компьютер больше не запустится");
-		 live = false; 
+		 System.out.println("Ваш компьютер сгорел");
+		 conditioncheck = false; 
+		 sc.hasNext();
+			 if (sc.hasNext() == true) {
+				 turnOn();
+			 }
 		 }
-		 do {
-			 turnOn();
-		 } while (live = true);		//Добавил цикл do-while
-	 	
 	 }             
  }
 	  
@@ -62,16 +65,13 @@ String сore;
 	 if (boot == false) {
 		 System.out.println("Вы не можете выключить выключенный компьютер");
 	 } else {
-	 if (live == false) {
-		 System.out.println("Ваш компьютер не запустится.");
-	 }
 	 System.out.println("Попытка выключения компьютера. Введите число от 0 или 1");
 	 Scanner sc = new Scanner(System.in);
 	 int a = sc.nextInt();
 	 Random r = new Random();
 	 int b = r.nextInt(2);
 	 if (b == a) {
-		 System.out.println("Компьютер вылючен. Хотите включить его? Введите 1, если Да и 0, если нет");
+		 System.out.println("Компьютер выключен. Хотите включить его? Введите 1, если <<Да>> и 0, если <<Нет>>");
 		 int c = sc.nextInt();
 		 	if (c > 0) {			
 		 		turnOn();			
@@ -80,7 +80,7 @@ String сore;
 		 	}
 	 	} else {
 		 System.out.println("Ваш компьютер сгорел. Ваш компьютер больше не запустится");
-		 live = false;
+		 conditioncheck = false;
 	 		}
 	 	}	
 	 }             
