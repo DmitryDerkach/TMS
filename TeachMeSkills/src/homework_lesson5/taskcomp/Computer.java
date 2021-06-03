@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class Computer {									//Вынес в отдельный класс         
 														//Название класса с большой буквы 
-protected String сore;
-protected int ram;												//Наименование полей класса с маленькой буквы 
-protected int hdd;
-protected int liveresourse; 
+private String сore;
+private int ram;												//Наименование полей класса с маленькой буквы 
+private int hdd;
+private int liveresourse; 
 
 private boolean conditioncheck = true;
 private boolean boot = false; 

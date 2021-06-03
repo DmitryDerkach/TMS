@@ -7,7 +7,7 @@ public class CompApplication {
 public static void main(String[] args) {
 	
 Computer pc = new Computer("AMD", 16, 500, 2);
-//pc.displayInfo();
+pc.displayInfo();
 //pc.turnOff();
 pc.turnOn();
 

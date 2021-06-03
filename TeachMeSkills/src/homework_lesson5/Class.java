@@ -123,4 +123,4 @@ class Person{
 		System.out.printf("Name: %s \tAge: %d\n", name, age);
 	}
 }		
-	
+/*Импорт пакетов и классов*/	
