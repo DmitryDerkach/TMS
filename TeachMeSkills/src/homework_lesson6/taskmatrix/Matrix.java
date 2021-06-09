@@ -6,6 +6,7 @@ public class Matrix {
 	private int line;
 	private int [][] arr;
 	private boolean trigger = false;
+	private int supnum = 1;
 	/*Методы*/
 	public int getColumn() {
 		return column;
@@ -30,13 +31,15 @@ public class Matrix {
 				}
 			}
 		/*Выводим исходную матрицу на экран*/
-		System.out.println("Исходная матрица:");
+		System.out.println("Матрица №" + supnum + ":"); /*Почему при создании второй матрицы 34 строчка все равно вы-
+		выодит "Матрица №1:", хотя я добавил иттерацию переменной supnum?*/
 		for (int i = 0; i < line; i++) {
 			for (int j = 0; j < column; j++) {
 				System.out.printf(" %3d", arr [i][j]);
 			}
 			System.out.println();
 		}
+		supnum += supnum; /*Добавлена иттерация*/
 	}
 	/*Умножение матрицы на число*/
 	public void multiplicationBy(int num) {
@@ -58,6 +61,11 @@ public class Matrix {
 				}
 				System.out.println();
 			}
+	/*Сложение матрицы с дпругой матрицей*/		
+//	public void matrixAddition() {
+//		
+//	}
+			
 	}
 	
 }

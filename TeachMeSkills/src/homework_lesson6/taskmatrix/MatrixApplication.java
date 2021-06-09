@@ -9,11 +9,13 @@ test.setColumn(4);
 test.setLine(3);
 /*Генерируем нашу матрицу*/
 test.createMatrix();
-/*Вызываем метод усножения на число*/	
-test.multiplicationBy(2);	
+/*Вызываем метод умножения на число*/	
+//test.multiplicationBy(2);	
 
-	
-	
+Matrix test1 = new Matrix();
+test1.setColumn(4);
+test1.setLine(3);
+test1.createMatrix();	
 	
 	
 	
