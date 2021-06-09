@@ -47,7 +47,7 @@ public class Matrix {
 		System.out.println("Выводим на экран матрицу под номером " + n + ":");
 		for (int i = 0; i < line; i++) {
 			for (int j = 0; j < column; j++) {
-				System.out.printf(" %3d", arrsup[n-1][i][j]);
+				System.out.printf(" %3d", arrsup[n-1][i][j]); /*Почему выскакивает NullPointerExeption?*/
 			}
 			System.out.println();
 		}
