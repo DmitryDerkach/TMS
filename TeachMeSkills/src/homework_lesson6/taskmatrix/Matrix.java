@@ -1,10 +1,11 @@
 package homework_lesson6.taskmatrix;
 import java.util.Random;
+import java.util.Scanner;
 public class Matrix {
 	/*Поля*/
 	private int column;
 	private int line;
-	private static int [][][] arrsup; /*Трехмерный массив, в который мы будем складывать двухмерные массивы для последующих вычислений*/
+	private int [][][] arrsup = new int[100][100][100]; /*Трехмерный массив, в который мы будем складывать двухмерные массивы для последующих вычислений*/
 	private boolean trigger = false; /*Триггер для проверок*/
 	private static int supnum = 1;/*Вспомогательное число, которым будем крутить ячейки трехмерного массива*/
 	/*Методы*/
@@ -23,8 +24,7 @@ public class Matrix {
 	/*Создаем матрицу*/
 	public void createMatrix() {
 		trigger = true;
-		arrsup = new int[100][][]; /*Создаем трехмерный массив, который будет хранить наш двумерный массив*/
-		arrsup [supnum-1] = new int [line][column]; /*Создаем двумерный массив ячейки трехмерного массива размерностью line * column*/
+		arrsup [supnum-1] = new int [line][column]; 
 		/*Заполняем матрицу рандомными значениями*/	
 			Random r = new Random();
 			for (int i = 0; i < line; i++) {
@@ -42,7 +42,7 @@ public class Matrix {
 		}
 		supnum += supnum; 
 	}
-	/*Метод, который будет выводить на экран ту матрицу, которая нам была нужна*/
+	/*Метод, который будет выводить на экран матрицу под тем номером, который нам нужен*/
 	public void displayMatrix(int n) {
 		System.out.println("Выводим на экран матрицу под номером " + n + ":");
 		for (int i = 0; i < line; i++) {
@@ -53,41 +53,61 @@ public class Matrix {
 		}
 	}
 	
-//	/*Умножение матрицы на число*/
-//	public void multiplicationBy(int num) {
-//		if (trigger == false) {
-//			System.out.println("Вы не можете пользоваться операцией умножения, пока не сгенерируете матрицу!");
-//			return;
-//		}
-//	/*Умножаем элементы матрицы на число num*/	
-//			for (int i = 0; i < line; i++) {
-//				for (int j = 0; j < column; j++) {
-//					arrsup[supnum] = 
-//				}
-//			}
-//	/*Выводим полученную матрицу на экран*/		
-//			System.out.println("Матрица, умноженная на число " + num + ":");
-//			for (int i = 0; i < line; i++) {
-//				for (int j = 0; j < column; j++) {
-//					System.out.printf(" %3d", arrsup[supnum-1] [i][j]);
-//				}
-//				System.out.println();
-//			}
-//	}
+	/*Умножение матрицы на число*/
+	public void multiplicationBy(int n) {
+		if (trigger == false) {
+			System.out.println("Вы не можете пользоваться операцией умножения, пока не сгенерируете матрицу!");
+			return;
+		}
+	System.out.print("Введите номер порядковый номер квадратной матрицы (не индекс!), из сохраненных в памяти для данного экземпляра класса, \n"
+			+ "на элементы которой будет производится умножение(исходная матрица будет перизаписана): ");
+	Scanner sc = new Scanner (System.in);
+	int a = sc.nextInt();
+	sc.close();
+		/*Умножаем элементы матрицы на число num*/	
+			for (int i = 0; i < line; i++) {
+				for (int j = 0; j < column; j++) {
+					arrsup[a-1][i][j] = arrsup[a-1][i][j] * n; 
+				}
+			}
+	/*Выводим полученную матрицу на экран*/		
+				System.out.println("Выводим на экран матрицу под номером " + a + ", умноженную, на число " + n);
+				for (int i = 0; i < line; i++) {
+					for (int j = 0; j < column; j++) {
+						System.out.printf(" %3d", arrsup[a-1][i][j]); 
+					}
+					System.out.println();
+				}
+			}
 	/*Сложение матрицы с другой матрицей*/		
-//	public void matrixplusmatrix(Matrix a, Matrix b) {
-//		for (int i = 0; i < line; i++) {
-//			for (int j = 0; j< column; j++) {
-//				int [][] arrresult = new int [line][column];
-//				arrresult[i][j] = a[i][j] + b[i][j];
-//				
-//				
-//			}
-//		}
-		
+	public void matrixPlusMatrix() {
+	System.out.print("Введите номер порядковый номер квадратной матрицы (не индекс!), которая будет является первым слагаемым: ");
+	Scanner sc = new Scanner (System.in);
+	int a = sc.nextInt();
+	System.out.print("Введите номер порядковый номер квадратной матрицы (не индекс!), которая будет является вторым слагаемым: ");
+	int b = sc.nextInt();
+	for (int i = 0; i < line; i++) {
+		for (int j = 0; j < column; j++) {
+			arrsup[99][i][j] = arrsup[a-1][i][j] + arrsup[b-1][i][j];	/*Почему эта строчка будет выбивать мне
+			NullPointer если я проинициализирую массив не так, как сейчас, а, например, new int[100][line][column] */
+		}
+	
+	}	
+	System.out.println("Итоговая матрица перезаписывает двумерный массив под №100 из-за специфики программы): ");
+	for (int i = 0; i < line; i++) {
+		for (int j = 0; j < column; j++) {
+			System.out.printf(" %3d", arrsup[99][i][j]);
+			}
+		System.out.println();
+		}
 }
 
-	
+
+
+
+
+
+}	
 	
 	
 	
