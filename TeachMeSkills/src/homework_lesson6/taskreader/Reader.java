@@ -64,10 +64,9 @@ public class Reader {
 //	public void takeBook(Book ... nameofbooksandauthors) {
 //		System.out.print(this.fullname + " взял книги: \n");
 //			link = nameofbooksandauthors;
-//			for(int z: link.length) {
+//			for(int z: link.length-1) {
 //				System.out.println(link[z].getBookname());
 //				System.out.println(link[z].getAuthor());
-//				z++;
 //			}
 //		
 //	}
@@ -75,14 +74,10 @@ public class Reader {
 	public void takeBook(Book ... nameofbooksandauthors) {
 		System.out.print(this.fullname + " взял книги: \n");
 			link = nameofbooksandauthors;
-			int z = 0;
-			for(Book i: link) {  /*Как работает перебор цикла в данном случае? Т.е. мы создаем массив типа Book с плавающим кол-вом
-			элементов и данный цикл крутится до тех пор, пока кол-во элементов в массивах i и link не сравняется?*/    				
-				System.out.println(link[z].getBookname());
-				System.out.println(link[z].getAuthor());
-				z++;
+			for(Book i: link) {    				
+				System.out.println(i.getBookname());
+				System.out.println(i.getAuthor());
 			}
-		
 	}	
 	
 	
