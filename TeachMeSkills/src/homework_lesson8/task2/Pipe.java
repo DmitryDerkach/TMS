@@ -1,6 +1,6 @@
 package homework_lesson8.task2;
 
-public class Pipe implements Instrument{
+public class Pipe implements Instrument{/*Труба содержит переменную класса "Диаметр"*/
 	    private int diameter;
 
 	    public Pipe(int diameter) {

@@ -1,6 +1,6 @@
 package homework_lesson8.task1;
 
-public class Book implements Printable{
+public class Book implements Printable{ /*Определили класс Book, реализующий интерфейс Printable.*/
 	private String bookName;
     private String author;
 
@@ -31,7 +31,8 @@ public class Book implements Printable{
     public void print(){
         System.out.printf("Book: %s, author: %s\n",bookName,author);
     }
-    public static void printBooks(Printable[] printables){
+    public static void printBooks(Printable[] printables){/*Создать статический метод printBooks(Printable[] printable) в классе Book, 
+    который выводит на консоль названия только книг. Используем оператор instanceof. */
         for(Printable i: printables){
             if (i instanceof Book ){
             i.print();

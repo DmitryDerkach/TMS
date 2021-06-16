@@ -1,6 +1,6 @@
 package homework_lesson8.task2;
 
-public class Guitar implements Instrument{
+public class Guitar implements Instrument{/*Гитара содержит переменную класса "количествоСтрун"*/
     private int countStr;
 
     public int getCountStr() {

@@ -1,6 +1,6 @@
 package homework_lesson8.task2;
 
-public class Drums implements Instrument{
+public class Drums implements Instrument{/*Барабан содержит переменную класса "Размер"*/
     private int size;
 
     public Drums(int size) {
