@@ -12,8 +12,8 @@ private int liveresourse;
 
 private boolean conditioncheck = true;
 private boolean boot = false; 
-private int on;
-private int off;
+private int on = 0;
+private int off = 0;
  Computer(String a, int b, int c, int d){
 	 сore = a;
 	 ram = b;
@@ -34,11 +34,12 @@ private int off;
 	 if ((on + off) == (liveresourse * 2)) {
 		 System.out.println("Комьютер сгорел из-за превышения доупстимого кол-ва циклов включений и выключений");
 	 }
-	 boot = true;
-	 System.out.println("Попытка включения компьютера");
 	 if (conditioncheck == false) {						
 		 System.out.println("Ваш компьютер больше не запустится. Он сгорел");
-	 } else {
+		 return;
+	 }
+	 boot = true;
+	 System.out.println("Попытка включения компьютера");
 	 System.out.println("Введите число 0 или 1");	 
 	 Scanner sc = new Scanner(System.in);
 	 int a = sc.nextInt();
@@ -56,16 +57,16 @@ private int off;
 	 	} else {
 		 System.out.println("Ваш компьютер сгорел");
 		 conditioncheck = false; 
+		 boot = false;
 		 sc.hasNext();
 			 if (sc.hasNext() == true) {
 				 turnOn();
 			 }
 		 }
 	 }             
- }
-	  
+ 
  void turnOff(){
-	 if (boot == false) {
+	 if ((boot == false) || (conditioncheck = false)){
 		 System.out.println("Вы не можете выключить выключенный компьютер");
 	 } else {
 	 System.out.println("Попытка выключения компьютера. Введите число 0 или 1");

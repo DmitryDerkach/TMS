@@ -12,24 +12,14 @@ mobile2.getInfo();
 mobile3.getInfo();
 
 mobile1.reciveCall("Dima");
-mobile1.setNumber(1111);
-int a = mobile1.getNumber(); 
-System.out.println(a);
+System.out.println(mobile1.getNumber()); 
+	mobile2.reciveCall("Vasya");
+	System.out.println(mobile2.getNumber()); 
+		mobile3.reciveCall("Olya");
+		System.out.println(mobile3.getNumber()); 
+	
 mobile1.reciveCall("Ilya", 123456);
 mobile1.sendMessage(11212, 22222, 55555);
-
-//mobile1.setModel("Samsung");
-//mobile1.setNumber(123456);
-//mobile1.setWeight(270);
-
-//int a = mobile1.getNumber();
-//System.out.println(a);
-
-	
-	
-	
-	
-	
 
 }
 }
