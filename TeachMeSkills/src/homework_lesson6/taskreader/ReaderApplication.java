@@ -12,11 +12,15 @@ Book num3 = new Book("Песнь льда и пламени","Джорж РР М
 	Random r = new Random();	
 	Reader [] guest = new Reader[3];
 		for (int i = 0; i < guest.length; i++) {
-			guest[i] = new Reader(Name.NAME1.getName(i), Ticket.TICKET1.getTicket(), Faculty.FACULTY1.getFaculty(), Birthday.BIRTDAY1.getBirtday(), PhoneNum.NUM1.getNum()); 
+			guest[i] = new Reader(Name.NAME1.getName(i), Ticket.TICKET1.getTicket(i), Faculty.FACULTY1.getFaculty(i), Birthday.BIRTDAY1.getBirthday(i), PhoneNum.NUM1.getNum(i)); 
 		}
 	for (int i = 0; i < 3; i++) {
 		System.out.println(guest[i]);
 	}
+guest[2].takeBook(0);	
+guest[0].takeBook("Энциклопедия, Словарь");
+guest[1].takeBook(num1,num2);
+
 
 		
 }
