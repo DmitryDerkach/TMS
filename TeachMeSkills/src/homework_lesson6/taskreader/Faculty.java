@@ -10,7 +10,7 @@ public enum Faculty {
 		this.fac = fac;
 	}
 	/*Метод*/
-	public String geFaculty() {
+	public String getFaculty() {
 		return fac;
 	}
 }	
