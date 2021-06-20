@@ -20,7 +20,10 @@ Book num3 = new Book("Песнь льда и пламени","Джорж РР М
 guest[2].takeBook(0);	
 guest[0].takeBook("Энциклопедия, Словарь");
 guest[1].takeBook(num1,num2);
-
+	System.out.println();
+	guest[0].returnBook(0);	
+	guest[1].returnBook("Энциклопедия, Словарь");
+	guest[2].returnBook(num1,num2);
 
 		
 }
