@@ -2,83 +2,42 @@ package homework_lesson6.taskreader;
 
 public class Reader {
 	/*Fields*/
-	private String fullname;
-	private int ticketnum;
-	private String faculty;
-	private int birthdate;
-	private int phonenumber;
-	private Book[] link;
+	private static Name [] name = new Name[3];
+	private static Ticket [] ticket  = new Ticket[3];
+	private static Faculty [] faculty = new Faculty [3] ;
+	private static Birthday [] birtday = new Birthday [3];
+	private static PhoneNum [] phonenumber = new PhoneNum[3];
+	private static int counter = 0;
+	
+	private Book[] book;
 	/*Constructors*/
 	public Reader() {
-		
 	}
-	public Reader(String fullname, int ticketnum, String faculty, int birthdate, int phonenumber) {
-		this.fullname = fullname;
-		this.ticketnum = ticketnum;
-		this.faculty = faculty;
-		this.birthdate = birthdate;
-		this.phonenumber = phonenumber;
+	public Reader(Name n, Ticket t, Faculty f, Birthday b, PhoneNum pn) {
+		name [counter] = n;
+		ticket [counter] = t;
+		faculty [counter] = f;
+		birtday [counter] = b;
+		phonenumber [counter] = pn;
+		counter+=1;
 	}
-	/*Methods*//*getters and setters*/
-	public String getFullname() {
-		return fullname;
-	}
-	public void setFullname(String fullname) {
-		this.fullname = fullname;
-	}
-	public int getTicketnum() {
-		return ticketnum;
-	}
-	public void setTicketnum(int ticketnum) {
-		this.ticketnum = ticketnum;
-	}
-	public String getFaculty() {
-		return faculty;
-	}
-	public void setFaculty(String faculty) {
-		this.faculty = faculty;
-	}
-	public int getBirthdate() {
-		return birthdate;
-	}
-	public void setBirthdate(int birthdate) {
-		this.birthdate = birthdate;
-	}
-	public int getPhonenumber() {
-		return phonenumber;
-	}
-	public void setPhonenumber(int phonenumber) {
-		this.phonenumber = phonenumber;
-	}
-	/*end of getters and setters*/
-	public void takeBook(int num) {
-		System.out.println(this.fullname + " взял " + num + " книг");	
-	}
-	public void takeBook(String ... nameofbooks) {
-		System.out.print(this.fullname + " взял книги: \n");
-			for(String i: nameofbooks) {
-				System.out.print(i + " ");
+		public void takeBook(int num) {
+			System.out.println(this.name + " взял " + num + " книг");	
 		}
-	}
-/*Почему не работает вот так*/	
-//	public void takeBook(Book ... nameofbooksandauthors) {
-//		System.out.print(this.fullname + " взял книги: \n");
-//			link = nameofbooksandauthors;
-//			for(int z: link.length-1) {
-//				System.out.println(link[z].getBookname());
-//				System.out.println(link[z].getAuthor());
-//			}
-//		
-//	}
-/*И почему работает вот так?*/
-	public void takeBook(Book ... nameofbooksandauthors) {
-		System.out.print(this.fullname + " взял книги: \n");
-			link = nameofbooksandauthors;
-			for(Book i: link) {    				
-				System.out.println(i.getBookname());
-				System.out.println(i.getAuthor());
+		public void takeBook(String ... nameofbooks) {
+			System.out.print(this.name + " взял книги: \n");
+				for(String i: nameofbooks) {
+					System.out.print(i + " ");
 			}
-	}	
+		}
+		public void takeBook(Book ... nameofbooksandauthors) {
+			System.out.print(this.name + " взял книги: \n");
+				book = nameofbooksandauthors;
+				for(Book i: book) {    				
+					System.out.println(i.getBookname());
+					System.out.println(i.getAuthor());
+				}
+		}	
 	
 	
 	

@@ -8,6 +8,10 @@ public class Book {
 	public Book(){
 		
 	}
+	public Book(String a, String b) {
+		bookname = a;
+		author = b;
+	}
 	/*Методы*/
 	public String getBookname() {
 		return bookname;
@@ -21,7 +25,4 @@ public class Book {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	
-	
-	
 }
