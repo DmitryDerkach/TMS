@@ -8,7 +8,8 @@ public class Application {
 		Clothes cl2 = new Tshirt(ClothesSize.S, 5, "White");
 		Clothes cl3 = new Pants(ClothesSize.M, 300, "Black");
 			Clothes [] arrayofcloth = {cl0, cl1, cl2, cl3};
-			
+					Atelier.dressWoman(arrayofcloth);
+					Atelier.dressMan(arrayofcloth);
 
 	}
 

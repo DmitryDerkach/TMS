@@ -1,27 +1,25 @@
 package homework_lesson8.taskclothes;
 
-public class Atelier implements ManCloth, WomanCloth{
-	private Clothes [] cl = null;
-	@Override
-	public void dressUpWoman() {
-		supmethodforwowan();
-		
-	}
-		private void supmethodforwowan(Clothes [] arrayofcloth) {
+public class Atelier{
+	private static Clothes [] cl = null;
+		public static void dressWoman(Clothes [] arrayofcloth) {
 			cl = arrayofcloth;
 			System.out.println("Доступаня женская одежда:");
 			for (int i = 0; i < cl.length; i++) {
-				if ((cl[i] instanceof Skirt) || (cl[i] instanceof Pants) || (cl[i] instanceof Tshirt)) {
-					cl.toString();
+				if (cl[i] instanceof WomanCloth) {
+					System.out.println(cl[i].toString());
 				}
 			}
 		}
-
-	@Override
-	public void dressUpMen() {
-		// TODO Auto-generated method stub
-		
-	}	
+		public static void dressMan(Clothes [] arrayofcloth) {
+			cl = arrayofcloth;
+			System.out.println("Доступаня мужская одежда одежда:");
+			for (int i = 0; i < cl.length; i++) {
+				if (cl[i] instanceof ManCloth) {
+					System.out.println(cl[i].toString());
+				}
+			}
+		}	
 }
 	
 
