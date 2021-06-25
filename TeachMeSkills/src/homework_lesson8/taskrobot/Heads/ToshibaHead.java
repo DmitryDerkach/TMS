@@ -10,9 +10,9 @@ public class ToshibaHead implements IHead {
 			return pr;
 		}
 
-		public void setPr(int pr) {
-			this.pr = pr;
-		}
+	public void setPr(int pr) {
+		this.pr = pr;
+	}
 
 	@Override
 	public void speek() {
