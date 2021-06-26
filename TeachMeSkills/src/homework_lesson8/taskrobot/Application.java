@@ -14,6 +14,9 @@ public class Application {
 		r1.action();
 		r1.setHand(new SonyHand(100));
 		r1.setHead(new ToshibaHead());
+/*r1.setHead(new ToshibaHead()); - это выражение означает, что в метод сетХэд, я передаю экземпляр класса ТошибаХэд.
+ *И я хочу, например, у этого экземпляра вызвать метод SetPr, как я могу это сделать? Какое имя переменной, у экземпляра
+ *класса ТошибаХэд?*/
 		r1.getPrice();
 		r1.action();
 //		Robot = new Robot (/*Head, Hand, Leg*/);
