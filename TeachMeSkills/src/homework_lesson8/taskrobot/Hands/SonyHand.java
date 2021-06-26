@@ -1,14 +1,20 @@
 package homework_lesson8.taskrobot.Hands;
 
 public class SonyHand implements IHand {
-	private int pr;
-		public SonyHand(int p) {
-		pr = p;
+	private int price;
+	
+		public SonyHand() {
+			
 		}
-	
-	public int getPrice() {
-	
-		return pr;
-	}
+		public SonyHand(int p) {
+			price = p;
+		}
 
+		public void setPrice(int pr) {
+			price = pr;
+		}
+		@Override
+		public int getPrice() {
+			return price;
+		}
 }

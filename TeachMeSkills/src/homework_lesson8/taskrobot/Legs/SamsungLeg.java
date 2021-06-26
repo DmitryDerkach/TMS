@@ -1,20 +1,25 @@
 package homework_lesson8.taskrobot.Legs;
 
 public class SamsungLeg implements ILeg {
-	private int pr;
-		public SamsungLeg(int pr) {
-			this.pr = pr;
+	private int priece;
+	
+		public SamsungLeg() {
+			
 		}
-	@Override
-	public void step() {
-		System.out.println("Шаг ногой Самсунг");
+		public SamsungLeg(int pr) {
+			priece = pr;
+		}
 		
-	}
-
-	@Override
-	public int getPrice() {
-		// TODO Auto-generated method stub
-		return pr;
-	}
+		@Override
+		public void step() {
+			System.out.println("Шаг ногой Самсунг");
+		}
+		@Override
+		public int getPrice() {
+			return priece;
+		}
+		public void setPriece(int a) {
+			priece = a;
+		}
 
 }

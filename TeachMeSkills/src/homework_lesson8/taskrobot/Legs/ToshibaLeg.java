@@ -1,17 +1,25 @@
 package homework_lesson8.taskrobot.Legs;
 
 public class ToshibaLeg implements ILeg{
-
-	@Override
-	public void step() {
-		System.out.println("Шаг ногой Тошиба");
+	private int priece;
+	
+		public ToshibaLeg() {
 		
-	}
-
-	@Override
-	public int getPrice() {
-		// TODO Auto-generated method stub
-		return 700;
-	}
+		}
+		public ToshibaLeg(int a) {
+			priece = a;
+		}
+		
+		@Override
+		public void step() {
+			System.out.println("Шаг ногой Тошиба");
+		}
+		@Override
+		public int getPrice() {
+			return priece;
+		}
+		public void setPriece(int a) {
+			priece = a;
+		}
 
 }

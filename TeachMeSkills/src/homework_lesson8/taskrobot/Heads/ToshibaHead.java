@@ -1,25 +1,23 @@
 package homework_lesson8.taskrobot.Heads;
 
 public class ToshibaHead implements IHead {
-	private int pr;
+	private int priece;
+	
 		public ToshibaHead() {
 		
 		}
-		
-	public int getPrice() {
-			return pr;
+		public ToshibaHead(int a) {
+			priece = a;
 		}
-
-	public void setPr(int pr) {
-		this.pr = pr;
-	}
-
-	@Override
-	public void speek() {
-		System.out.println("Говорит голова Тошиба");
 		
-	}
-
-	
-
+		public int getPrice() {
+			return priece;
+		}
+		public void setPriece(int a) {
+			priece = a;
+		}
+		@Override
+		public void speek() {
+			System.out.println("Говорит голова Тошиба");
+		}
 }
