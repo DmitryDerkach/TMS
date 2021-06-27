@@ -13,7 +13,7 @@ System.out.println(test.substring(5, 10));
 /*Advanced version*/
 //	Scanner sc = new Scanner(System.in);
 //	System.out.print("Введите строку, с которой будем работать: ");
-//	String a = sc.next();
+//	String a = sc.nextLine();
 //	System.out.print("Введите символ (А): ");
 //	String b = sc.next();
 //	System.out.print("Введите символ (B): ");
@@ -50,7 +50,7 @@ System.out.println(test.substring(5, 10));
 /*C использованием StrinBuilder*/	
 Scanner sc1 = new Scanner(System.in);  
 System.out.print("Введите строку, с которой будем работать: ");
-String supstring1 = sc1.next();
+String supstring1 = sc1.nextLine();
 char [] arrsup = supstring1.toCharArray();
 System.out.print("Введите символ (А): ");
 String b2 = sc1.next();
