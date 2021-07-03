@@ -66,10 +66,11 @@ FileWriter fileW = null;
 	try {
 		buffR = new BufferedReader(new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\copied_fileN3.txt"));
 		int a = 0;
-		System.out.println();
-		while ((a = buffR.read()) != -1) { /*Чтение посимвольно*/
-			buffR.read();
+		//String a = null; 
+		System.out.println(); 
+		while ((a = buffR.read()/*Line()*/) != -1/*null*/) {/*Чтение посимвольно. C чтением построчно тоже проблем нет*/
 			System.out.print((char)a);
+			//System.out.println(a);
 		}
 	} catch (IOException e) {
 		e.printStackTrace();
