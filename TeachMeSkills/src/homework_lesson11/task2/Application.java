@@ -25,25 +25,28 @@ public class Application  {
 						/*После того, как мы определились с длинной массива, будем ложить наши строки в ячейки массива*/
 					}
 				}
-			/*Заполняем наш массив*/
-			String s = "";
+			/*Заполняем наш массив строк строками до точки*/
+			String snew = "";
 			a = 0;
-			for (int i = 0; i < counter; i++) {
+			int i = 0;
+			fr1.close();
+			fr1 = new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN1");
 				try {
-					while ((a = fr1.read()) != -1) { /*Выбивает -1*/
+					while ((a = fr1.read()) != -1) { 
 						if (((char)a != '!') && ((char)a != '?') && ((char)a != '.')) {
-						s = s.concat(String.valueOf((char)a));
-						System.out.print(s);
+						snew = snew.concat(String.valueOf((char)a));
+						System.out.print(snew);
 						} else {
-						arrayofstrings[i] = s;
-						System.out.println(arrayofstrings[i]);
+						snew = snew.concat(String.valueOf((char)a));
+						arrayofstrings[i] = snew;
+						i+=1;
+						snew = "";
 						}
-						
 					}
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-			}
+			
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
