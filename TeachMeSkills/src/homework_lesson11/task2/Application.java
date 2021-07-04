@@ -9,12 +9,12 @@ public class Application  {
 			FileReader fr1 = new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN1");
 			FileWriter fw1 = new FileWriter("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN2");
 			/*Предложения разделяются точкой, восклицательным или вопросительным знаком*/
-			int a = 0;/*Вспомогатлеьный счетчик*/
+			int a = 0;/*Вспомогательный счетчик*/
 			int counter = 0; /*Счетчик, который крутит длинну массива*/
 			String [] arrayofstrings = null; /*Массив, который мы собираемся заполнять*/
 			try {
 				while ((a = fr1.read()) != -1)/*Крутим наш текст*/ {
-					fw1.write(a); /*Костыль. Я не знаю, как мне полсе того, как я прочел все символы, вернуться в начало, поэтому, на
+					fw1.write(a); /*Костыль. Я не знаю, как мне после того, как я прочел все символы, вернуться в начало, поэтому, на
 					данном этапе, сразу записываю читаемые символы в новый поток вывода*/
 					System.out.print((char)a);
 					if (((char)a == '!') || ((char)a == '?') || ((char)a == '.')) {
@@ -34,8 +34,7 @@ public class Application  {
 			массива, в который мы записались*/
 			for (int i = 0; i < counter; i++) {
 				try {
-					while ((a = fr1.read()) != -1) {/*Забавно. После того, как мы полностью прошлись по
-					тексту, мы не возвращаемся в начало, а просто триггерим -1*/
+					while ((a = fr1.read()) != -1) {
 						if (((char)a != '!') && ((char)a != '?') && ((char)a != '.')) {
 						s = s.concat(String.valueOf((char)a));
 						System.out.print(s);
