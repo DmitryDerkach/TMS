@@ -22,13 +22,13 @@ public class Application {
 				while ((s = bf1.readLine()) != null) {
 					/*Пишем проверку на палиндром через стрингбилдер, чтобы не возится с переводом каждого слова в символьное пред-
 					 *ставление, с последующим сравниваением каждого символа*/
-					int a = 0;
-					a = s.length();
-					String sup1 = String.valueOf(s.charAt(0));
-					String sup2 = String.valueOf(s.charAt(a-1));
-						if ((strb1.append(s) == strb1.append(s).reverse()) || (sup1.equalsIgnoreCase(sup2))) {
+					strb1.append(s);
+						if (strb1.toString().equalsIgnoreCase(strb1.reverse().toString())) {
 							fw1.write(s + "\n");
-						} 
+							strb1.delete(0, strb1.length());
+						} else {
+							strb1.delete(0, strb1.length());
+						}
 				}
 		} catch (Exception e) {
 			System.out.println("Something goes wrong...");
