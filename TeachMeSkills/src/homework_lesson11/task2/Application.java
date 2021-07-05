@@ -35,7 +35,6 @@ public class Application  {
 					while ((a = fr1.read()) != -1) { 
 						if (((char)a != '!') && ((char)a != '?') && ((char)a != '.')) {
 						snew = snew.concat(String.valueOf((char)a));
-						System.out.print(snew);
 						} else {
 						snew = snew.concat(String.valueOf((char)a));
 						arrayofstrings[i] = snew;
