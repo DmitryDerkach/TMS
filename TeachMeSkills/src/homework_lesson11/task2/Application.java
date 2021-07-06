@@ -46,10 +46,9 @@ public class Application  {
 						}
 					}
 				/*Проверяем наши предложения*/
-//				for (i = 0; i < arrayofstrings.length; i++) {
-//					TextFormater.checkIn(arrayofstrings[i]);
-//				}
-					TextFormater.checkIn(arrayofstrings[i = arrayofstrings.length - 1]);	
+				for (i = 0; i < arrayofstrings.length; i++) {
+					TextFormater.checkIn(arrayofstrings[i]);
+				}
 				} catch (IOException e) {
 					e.printStackTrace();
 				}

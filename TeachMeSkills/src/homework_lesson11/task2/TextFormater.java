@@ -1,10 +1,16 @@
 package homework_lesson11.task2;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class TextFormater {
 	private static char [][] arrayofchars = null;/*Помещаем сюда, чтобы наш массив был доступен из любого метода*/
 	private static int counter = 0;
 	
-	public static void checkIn(String s) {
+	public static void checkIn(String s){
+		FileWriter fw1 = null;
+	try {
+		fw1= new FileWriter("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN2");
 		arrayofchars = new char[1][s.toCharArray().length]; /*Наш двумерный массив, в 0 строку которого
 		нужно передать целый текст,разложенный в символы*/
 		arrayofchars[0] = s.toCharArray();
@@ -22,41 +28,71 @@ public class TextFormater {
 			}
 		}
 		/*Обновим наш двумерный массив, т.к. теперь мы знаем, сколько же слов он у нас будет содержать*/
-		arrayofchars = new char[counter+1][]; /*Каунтер это наши слова, но нельзя забывать и про текст*/
+		arrayofchars = new char[counter+1][100]; /*100 - магическое число. Если массив будет заполнен null-ами в дальнейшем будет нево-
+		зможно с ним рабоатать. Мб стоит переделать, как осовою коллекции*/
 		arrayofchars[0] = s.toCharArray();
+		for (int  i = 1; i < counter+1; i++) {
+			for (int j = 0; j < 100; j++) {
+				arrayofchars[i][j] = ' ';
+			}
+			
+		}
 		if ((counter >=3) && (counter <=5)){
 			System.out.println("Предложение: \n" +"<<" + s + ">>" + "\nудовлетворяет основному условию условию");
+			fw1.write(s + "\n");
 		} else {
 			boolean flag = paliCheck(s);
 			if (flag == true) {
-				System.out.println("Предложение: \n" +"<<" + s + ">>" + "\nудовлетворяет дополнительному условию условию");
+				System.out.println("Предложение: \n" +"<<" + s + ">>" + "\nудовлетворяет дополнительному условию");
+				fw1.write(s + "\n");
 			} else {
 				System.out.println("Предложение: \n" +"<<" + s + ">>" + "\nне удовлетворяет ни основному, ни дополнительному условию,"
 						+ "поэтому оно не было записано в файл");
 			}
 		}
+	} catch (Exception e){
+		e.printStackTrace();
+		System.out.println("Проблема с записью в файл #1");
+	} finally {
+		try {
+			fw1.close();
+		} catch (IOException e) {
+			System.out.println("Проблема с записью в файл #2");
+		}
 	}
-	
+	} 
 	public static boolean paliCheck(String s) {
 		/*Метод, который будет осуществлять проверку на палиндром*/
 		/*Задача №1 - разложить предложения на слова*/
 		/*Задача №2 - проверить слова на палиндромность*/
 		boolean flag = false;
-		int arrayturner = 0;
-		//counter = 0;
-		char [] suparray = new char[s.toCharArray().length];
-		for (int i = 0; i < s.toCharArray().length; i++) {
-			suparray[i] = arrayofchars[0][i];	/*Передаем наши символы во вспомогательный массив*/
-			//counter +=1;
+		int arrayturner = 1;
+		int supcounter = 0;
+		for (int i = 0; i < s.length(); i++) {
+			arrayofchars[arrayturner][i] = s.charAt(i);
 			if ((arrayofchars[0][i] == ' ') || (arrayofchars[0][i] == ',') || (arrayofchars[0][i] == ':') || (arrayofchars[0][i] == '-')||
-			(arrayofchars[0][i] == '.') || (arrayofchars[0][i] == '!') || (arrayofchars[0][i] == '?')) {
-			/*Как только триггернули перекладываем все, что успели поназаписывать в основной массив*/
-				suparray[i] = ' ';/*Потом тримом уберу.*/
-				arrayofchars[arrayturner+=1] = suparray; 
+				(arrayofchars[0][i] == '.') || (arrayofchars[0][i] == '!') || (arrayofchars[0][i] == '?')) {
+				arrayofchars[arrayturner][i] = ' ';
+				arrayturner+=1;
+				if (arrayturner > counter) {
+					arrayturner-=1;
+					break;
+				}
 			}
 		}
-		/*Псоле того, как разложили слова, нужно проверить каждое из них по отдельности на палиндромность*/
+		/*После того, как разложили слова, нужно проверить каждое из них по отдельности на палиндромность*/
+		/*Но! Местоимения и союзы не являются палиндромами, их выкидываем*/
 		for (int i = 0; i < arrayturner; i++) {
+			for ( int z = 0; z < 100; z++) {
+				if (arrayofchars[i][z] != ' ') { /*Почему выбивает java.lang.ArrayIndexOutOfBoundsException*/
+					supcounter += 1;
+				} else {
+					continue;
+				}
+			}
+			if (supcounter <= 4) {
+				continue;
+			}
 			String line = String.valueOf(arrayofchars[i+1]);
 			String linefinal = line.trim();
 			StringBuilder sb1 = new StringBuilder(linefinal);
