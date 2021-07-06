@@ -38,7 +38,7 @@ public class TextFormater {
 			
 		}
 		if ((counter >=3) && (counter <=5)){
-			System.out.println("Предложение: \n" +"<<" + s + ">>" + "\nудовлетворяет основному условию условию");
+			System.out.println("Предложение: \n" +"<<" + s + ">>" + "\nудовлетворяет основному условию");
 			fw1.write(s + "\n");
 		} else {
 			boolean flag = paliCheck(s);
@@ -81,19 +81,21 @@ public class TextFormater {
 			}
 		}
 		/*После того, как разложили слова, нужно проверить каждое из них по отдельности на палиндромность*/
-		/*Но! Местоимения и союзы не являются палиндромами, их выкидываем*/
+		/*Но местоимения и сюзы палиндромами не являются!*/	
 		for (int i = 0; i < arrayturner; i++) {
-			for ( int z = 0; z < 100; z++) {
-				if (arrayofchars[i][z] != ' ') { /*Почему выбивает java.lang.ArrayIndexOutOfBoundsException*/
-					supcounter += 1;
-				} else {
+				for ( int z = 0; z < 100; z++) {
+					if (arrayofchars[i+1][z] != ' ') { /*Почему выбивает java.lang.ArrayIndexOutOfBoundsException*/
+						supcounter += 1;
+					} else {
+						continue;
+					}
+				}
+				if (supcounter <= 4) {
+					supcounter = 0;
 					continue;
 				}
-			}
-			if (supcounter <= 4) {
-				continue;
-			}
 			String line = String.valueOf(arrayofchars[i+1]);
+			supcounter = 0;
 			String linefinal = line.trim();
 			StringBuilder sb1 = new StringBuilder(linefinal);
 			if (linefinal.equalsIgnoreCase(sb1.reverse().toString())) {
