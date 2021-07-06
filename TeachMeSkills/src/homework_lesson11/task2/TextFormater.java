@@ -10,7 +10,7 @@ public class TextFormater {
 	public static void checkIn(String s){
 		FileWriter fw1 = null;
 	try {
-		fw1= new FileWriter("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN2");
+		fw1= new FileWriter("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN2", true);
 		arrayofchars = new char[1][s.toCharArray().length]; /*Наш двумерный массив, в 0 строку которого
 		нужно передать целый текст,разложенный в символы*/
 		arrayofchars[0] = s.toCharArray();
