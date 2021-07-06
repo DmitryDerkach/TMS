@@ -15,6 +15,7 @@ public class Application  {
 			int a = 0;/*Вспомогательный счетчик*/
 			int counter = 0; /*Счетчик, который крутит длинну массива*/
 			String [] arrayofstrings = null; /*Массив, который мы собираемся заполнять*/
+			System.out.println("Исходный текст:"); 
 				while ((a = fr1.read()) != -1)/*Крутим наш текст*/ {
 					fw1.write(a); 
 					System.out.print((char)a);
@@ -25,6 +26,8 @@ public class Application  {
 						/*После того, как мы определились с длинной массива, будем ложить наши строки в ячейки массива*/
 					}
 				}
+				System.out.println();
+				System.out.println("====================================");
 			/*Заполняем наш массив строк строками до точки*/
 			String snew = "";
 			a = 0;
@@ -42,6 +45,11 @@ public class Application  {
 						snew = "";
 						}
 					}
+				/*Проверяем наши предложения*/
+//				for (i = 0; i < arrayofstrings.length; i++) {
+//					TextFormater.checkIn(arrayofstrings[i]);
+//				}
+					TextFormater.checkIn(arrayofstrings[i = arrayofstrings.length - 1]);	
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
