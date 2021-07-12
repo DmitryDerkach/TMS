@@ -16,6 +16,7 @@ public class HashSetexample {
         /*Так как элемент уже существет - возвращает false*/
         System.out.println(check);
         System.out.println("=================================");
+        /*Находим размер нашей коллекции*/
         System.out.println(states.size());
         System.out.println("=================================");
         /*Проходимся по элементам нашей коллекции*/
@@ -29,7 +30,14 @@ public class HashSetexample {
             System.out.println((String)array[i]);
         }
         System.out.println("=================================");
-        /*Создадим хеш-таблицу объектов Person*/
+        /*Удаление объекта из коллекции*/
+        states.remove("Germany");
+        array = states.toArray();
+        for (int i = 0; i < states.size(); i++){
+            System.out.println((String)array[i]);
+        }
+        System.out.println("=================================");
+        /*Создадим хеш-таблицу !объектов! Person*/
         /*Пример*/
         HashSet <Person> person = new HashSet<Person>();
         person.add(new Person("Mike"));
