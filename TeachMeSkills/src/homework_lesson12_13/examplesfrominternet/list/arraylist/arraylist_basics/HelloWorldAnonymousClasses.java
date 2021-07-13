@@ -21,8 +21,23 @@ public class HelloWorldAnonymousClasses {
         }
       
         HelloWorld englishGreeting = new EnglishGreeting();
-        
-        HelloWorld frenchGreeting = new HelloWorld() {
+		/*
+		 * The anonymous class expression consists of the following:
+		 * 
+		 * The new operator
+		 * 
+		 * The name of an interface to implement or a class to extend. In this example,
+		 * the anonymous class is implementing the interface HelloWorld.
+		 * 
+		 * Parentheses that contain the arguments to a constructor, just like a normal
+		 * class instance creation expression. Note: When you implement an interface,
+		 * there is no constructor, so you use an empty pair of parentheses, as in this
+		 * example.
+		 * 
+		 * A body, which is a class declaration body. More specifically, in the body,
+		 * method declarations are allowed but statements are not.
+		 */
+        HelloWorld frenchGreeting = new HelloWorld() { /*Анонимный класс*/
             String name = "tout le monde";
             public void greet() {
                 greetSomeone("tout le monde");
@@ -33,7 +48,7 @@ public class HelloWorldAnonymousClasses {
             }
         };
         
-        HelloWorld spanishGreeting = new HelloWorld() {
+        HelloWorld spanishGreeting = new HelloWorld() { /*Анонимный класс*/
             String name = "mundo";
             public void greet() {
                 greetSomeone("mundo");
