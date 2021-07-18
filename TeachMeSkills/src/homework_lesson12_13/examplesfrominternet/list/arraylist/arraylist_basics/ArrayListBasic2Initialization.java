@@ -13,11 +13,12 @@ public class ArrayListBasic2Initialization {
 		ArrayList<String> al2 = new ArrayList() { /*Создаем анонимный класс, который расширяет класс ArrayList. В блоке инициализации 
 		добавляем объекты в нашу коллекцию*/
 			{
-				//al2.add("Delhi");
-				add ("Agra");
+				add("Delhi");
+				//al2.add ("Agra");
 				add ("Minsk");
 			}	
 		};
 		System.out.println("Content of ArrayList cities: " + al2);
+		
 	}
 }
