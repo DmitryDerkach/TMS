@@ -2,7 +2,6 @@ package homework_lesson12_13.examplesfrominternet.list.arraylist.arraylist_basic
 
 import java.util.ArrayList;
 import java.util.Collections;
-
 /*ArrayList is a resizable-array implementation of the List interface. It implements all optional list operations, 
  *and permits all elements, including null*/
 /*Why ArrayList is better than Array?*/
@@ -167,7 +166,6 @@ int pos = obj.indexOf("Tom");
 This would give the index (position) of the string Tom in the list.
 
 7) Object get(int index): It returns the object of list which is present at the specified index.
-
 String str= obj.get(2);
 Function get would return the string stored at 3rd position (index 2) and would be assigned to the string “str”. 
 We have stored the returned value in string variable because in our example we have defined the ArrayList is of
