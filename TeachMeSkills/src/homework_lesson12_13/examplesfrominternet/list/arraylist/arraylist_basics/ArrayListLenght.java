@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /*By using size() method of ArrayList class we can easily determine the size of the ArrayList. This method returns the number of 
  *elements of ArrayList
  *Example: */
-public class ArrayList_Lenght {
+public class ArrayListLenght {
 public static void main(String[] args) {
 	ArrayList<Integer> al1 = new ArrayList<Integer>();
 	al1.add(1);
