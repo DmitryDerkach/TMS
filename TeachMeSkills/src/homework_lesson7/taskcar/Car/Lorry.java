@@ -3,6 +3,7 @@ package homework_lesson7.taskcar.Car;
 import homework_lesson7.taskcar.Driver.Person;
 import homework_lesson7.taskcar.Engine.Engine;
 
+/* Описание (2026): Грузовик - наследник Car с дополнительным полем carrying (грузоподъемность); переопределяет toString, дописывая его к данным родителя через super.toString(). */
 public class Lorry extends Car {
 	private int carrying;
 	

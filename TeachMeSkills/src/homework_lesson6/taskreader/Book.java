@@ -1,5 +1,6 @@
 package homework_lesson6.taskreader;
 
+/* Описание (2026): Модель книги (название и автор) для задачи про читателей библиотеки; объекты Book передаются в методы Reader.takeBook/returnBook. */
 public class Book {
 	/*Поля*/
 	String bookname;

@@ -26,6 +26,11 @@ public static void main(String[] args) {
 		System.out.print("Введите строку, с которой будем работать: ");
 		String a = sc.nextLine();
 		sc.close();
+		// fix 2026: проверка длины - на строке короче 4 символов раньше падал ArrayIndexOutOfBoundsException
+		if (a.length() < 4) {
+			System.out.println("Строка должна содержать минимум 4 символа");
+			return;
+		}
 		char [] arr = a.toCharArray();
 		System.out.print("Символ, стоящий на позиции 3 (начинаем счет с 0): " + arr[3] + "\n");
 		System.out.print("Символ, стоящий на позиции 0: " + arr[0] + "\n");
@@ -40,5 +45,7 @@ public static void main(String[] args) {
 					//System.out.println(strb1); Для проверки
 				}
 			}
+		// fix 2026: вывод результата - раньше строка менялась в StringBuilder, но на экран не печаталась
+		System.out.println(strb1);
 }
 }

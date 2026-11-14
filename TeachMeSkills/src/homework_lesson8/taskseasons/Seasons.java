@@ -2,6 +2,7 @@ package homework_lesson8.taskseasons;
 
 import java.util.Iterator;
 
+/* Описание (2026): Перечисление времён года с текстовым описанием и средней температурой (поля и конструктор enum). Для SPRING и SUMMER getDescription() переопределён в теле константы ("Теплое время года"), статический iLove() через switch выводит, какое время года любишь. */
 public enum Seasons {
 	WINTER("Зима - Холодно и идет снег", -30), 
 	SPRING("Весна - Природа оживает", +25){
@@ -9,12 +10,13 @@ public enum Seasons {
 			return "Теплое время года";
 		}
 	}, 
-	SUMMER("Лето - Ебучий зной", +35){
+	// fix 2026: нецензурные слова в описаниях лета и осени заменены на нейтральные
+	SUMMER("Лето - Изнуряющий зной", +35){
 		public String getDescription() {
 			return "Теплое время года";
 		}
 	}, 
-	AUTUMN("Осень - Ебучая грязь", -5);
+	AUTUMN("Осень - Слякоть и грязь", -5);
 	private String forinformation; 
 	private int temp;
 	Seasons(String string, int temp) {

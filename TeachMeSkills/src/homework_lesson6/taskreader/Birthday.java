@@ -1,5 +1,6 @@
 package homework_lesson6.taskreader;
 
+/* Описание (2026): Перечисление с тремя тестовыми датами рождения для задачи про читателей библиотеки; getBirthday(i) возвращает i-ю дату, чтобы заполнять массив Reader в цикле. */
 public enum Birthday {
 	BIRTDAY1("01-06-98"),
 	BIRTDAY2("01-06-97"),

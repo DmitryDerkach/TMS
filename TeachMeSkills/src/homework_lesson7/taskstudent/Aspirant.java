@@ -1,4 +1,5 @@
 package homework_lesson7.taskstudent;
+/* Описание (2026): Аспирант - наследник Student с темой научной работы; переопределяет getScholarship(): 200 при среднем балле 5.0, иначе 180. */
 public class Aspirant extends Student {
 	private String scienceWork;
 	

@@ -1,5 +1,6 @@
 package homework_lesson8.taskcloth.shoes;
 
+/* Описание (2026): Обувь Armani - реализация интерфейса Shoes с ценой; при надевании/снятии выводит соответствующее сообщение. */
 public class ArmaniShoes implements Shoes{
 	private int priece;
 	

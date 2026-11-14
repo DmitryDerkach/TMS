@@ -5,16 +5,19 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/* Описание (2026): читает файл task1fileN1.txt построчно (BufferedReader) и записывает в task1fileN2.txt только строки-палиндромы (проверка без учёта регистра через StringBuilder.reverse()). */
 public class Application {
 	public static void main(String[] args) {
 		BufferedReader bf1 = null;
 		FileReader fr1 = null;
 		FileWriter fw1 = null;
 		try {
-			fr1 = new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task1\\task1fileN1.txt");/*Поток ввода, то,
+			// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+			fr1 = new FileReader("src/homework_lesson11/task1/task1fileN1.txt");/*Поток ввода, то,
 			откуда мы читаем*/
 			bf1 = new BufferedReader(/*Конструктор принимает инстанс класса Reader,поэтому создадим его*/fr1);
-			fw1 = new FileWriter("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task1\\task1fileN2.txt");/*Поток вывода, 
+			// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+			fw1 = new FileWriter("src/homework_lesson11/task1/task1fileN2.txt");/*Поток вывода, 
 			то, куда мы записываем*/ 
 			String s = null; 
 			StringBuilder strb1 = new StringBuilder();
@@ -32,20 +35,21 @@ public class Application {
 		} catch (Exception e) {
 			System.out.println("Something goes wrong...");
 		} finally {
+			// fix 2026: проверка на null перед close() - если файл не открылся, раньше здесь падал NullPointerException
 			try {
-				fr1.close();
+				if (fr1 != null) fr1.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			try {
-				bf1.close();
+				if (bf1 != null) bf1.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			try {
-				fw1.close();
+				if (fw1 != null) fw1.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

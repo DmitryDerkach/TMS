@@ -1,5 +1,6 @@
 package homework_lesson7.taskshop;
 
+/* Описание (2026): Корзина покупок в задаче про магазин: массив купленных товаров со счетчиком; getProductintoBasket добавляет товар, displayBasket выводит все непустые позиции. */
 public class Basket  {
 	private Product [] boughtproduct = new Product[10];
 	private int counter = 0;

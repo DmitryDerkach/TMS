@@ -1,5 +1,6 @@
 package homework_lesson7.taskanimal;
 
+/* Описание (2026): Наследник Animal в задаче "Ветеринар": лошадь с дополнительным полем maxspeed, переопределяет makeNoise() и eat(). */
 public class Horse extends Animal{
 	private int maxspeed;
 	

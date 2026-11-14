@@ -1,5 +1,6 @@
 package homework_lesson7.taskcar.Driver;
 
+/* Описание (2026): Водитель в задаче про автомобили: ФИО и стаж вождения с геттерами/сеттерами. Является родителем класса Person. */
 public class Driver {
 	private int experience;
 	private String fullName;

@@ -3,6 +3,7 @@ package homework_lesson7.taskcar.Car;
 import homework_lesson7.taskcar.Driver.Person;
 import homework_lesson7.taskcar.Engine.Engine;
 
+/* Описание (2026): Спорткар - наследник Car с дополнительным полем maxspeed; переопределяет toString, дописывая максимальную скорость к данным родителя через super.toString(). */
 public class SportCar extends Car {
 	private int maxspeed;
 

@@ -1,8 +1,9 @@
 package homework_lesson3;
-//������� ������ �10 �� ���� ��������
+//Решение задачи №10 от Димы Поверова
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Альтернативное решение задачи 10: считывает N > 3, заполняет массив случайными числами от 0 до N-1, считает чётные ненулевые элементы и копирует их во второй массив нужного размера, который выводит через for-each. */
 public class Task10_1 {
 public static void main(String[] args) {
 
@@ -25,14 +26,14 @@ public static void main(String[] args) {
       int[] arr1 = new int[n];
 
       for (int i=0; i<arr1.length; i++) {
-          arr1[i] = rand.nextInt(n);       //��������� ������ ���������� �������
+          arr1[i] = rand.nextInt(n);       //Заполняем массив рандомными числами
           System.out.print(arr1[i] + " "); 
-          if (arr1[i]%2 == 0 && arr1[i]!=0) {		//���������� ���-�� ������ �����
+          if (arr1[i]%2 == 0 && arr1[i]!=0) {		//Определяем кол-во четных чисел
               evenCount++;
           }
       }
 
-      System.out.println("\nIn the array even " + ((evenCount>1)? "numbers are " : "number is ") + evenCount);  //������������� ��������� ��������
+      System.out.println("\nIn the array even " + ((evenCount>1)? "numbers are " : "number is ") + evenCount);  //Использование тернарной операции
 
       int[] arr2 = new int [evenCount];
 

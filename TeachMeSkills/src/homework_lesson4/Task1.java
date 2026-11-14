@@ -4,6 +4,7 @@ package homework_lesson4;
 import java.util.Scanner;
 import java.util.Random;
 
+/* Описание (2026): Создаёт квадратную матрицу введённого размера из случайных чисел от 0 до 50, выводит её и считает сумму чётных элементов на главной диагонали. */
 public class Task1 {
 public static void main(String[] args) {
 /*Начало общей части*/

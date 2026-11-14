@@ -2,6 +2,7 @@ package homework_lesson6.taskreader;
 
 import java.util.Arrays;
 
+/* Описание (2026): Читатель библиотеки (ФИО, номер билета, факультет, дата рождения, телефон). Демонстрирует перегрузку методов: takeBook/returnBook принимают количество книг, названия книг (varargs String) или объекты Book (varargs) и печатают соответствующее сообщение. */
 public class Reader {
 	/*Fields*/
 	private  String name;

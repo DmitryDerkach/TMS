@@ -25,7 +25,8 @@ public static void main(String[] args) {
 	al1.add("Dima!");
 	FileOutputStream fos = null;
 	try {
-		 fos = new FileOutputStream("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson12_13\\examplesfrominternet\\list\\arraylist\\other\\Note.txt");
+		 // fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		 fos = new FileOutputStream("src/homework_lesson12_13/examplesfrominternet/list/arraylist/other/Note.txt");
 	} catch (FileNotFoundException e) {
 		System.out.println("Ошибка FNF");
 	}
@@ -50,7 +51,8 @@ We are getting the same elements which we have added to the ArrayList before the
 	ArrayList<String> al2 = new ArrayList<String>();
 	FileInputStream fis = null;
 	try {
-		fis = new FileInputStream("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson12_13\\examplesfrominternet\\list\\arraylist\\other\\Note.txt");
+		// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		fis = new FileInputStream("src/homework_lesson12_13/examplesfrominternet/list/arraylist/other/Note.txt");
 	} catch (FileNotFoundException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

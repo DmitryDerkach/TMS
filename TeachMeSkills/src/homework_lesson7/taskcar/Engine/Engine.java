@@ -1,5 +1,6 @@
 package homework_lesson7.taskcar.Engine;
 
+/* Описание (2026): Двигатель в задаче про автомобили: мощность и производитель с геттерами/сеттерами; входит в состав Car. */
 public class Engine {
 	private int power;
 	private String manufacturer;

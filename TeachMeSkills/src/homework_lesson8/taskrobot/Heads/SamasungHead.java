@@ -1,5 +1,6 @@
 package homework_lesson8.taskrobot.Heads;
 
+/* Описание (2026): Голова робота Samsung - реализация IHead с ценой; speek() выводит "Говорит голова Самсунг". */
 public class SamasungHead implements IHead {
 	private int price;
 	

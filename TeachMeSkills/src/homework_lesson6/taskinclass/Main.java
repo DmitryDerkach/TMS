@@ -1,5 +1,6 @@
 package homework_lesson6.taskinclass;
 
+/* Описание (2026): Демонстрация классов Human и Ability, разобранных на занятии: создание объектов разными конструкторами, проверка сеттера возраста и получение имени способности через вложенный объект (dima.getAbility().getName()). */
 public class Main {
 public static void main(String[] args) {
 	

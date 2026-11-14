@@ -1,5 +1,6 @@
 package homework_lesson8.taskclothes;
 
+/* Описание (2026): Юбка - только женская одежда: наследует Clothes и реализует WomanCloth. Метод одевания - пустая заглушка, toString() дописывает тип вещи. */
 public class Skirt extends Clothes implements WomanCloth {
 
 	public Skirt(ClothesSize size, int cost, String color) {

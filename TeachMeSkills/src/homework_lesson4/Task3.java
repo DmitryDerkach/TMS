@@ -4,6 +4,7 @@ package homework_lesson4;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт квадратную матрицу введённого размера из случайных чисел от 0 до 10 и сравнивает произведения элементов главной и побочной диагоналей. */
 public class Task3 {
 public static void main(String[] args) {
 /*Начало общей части*/

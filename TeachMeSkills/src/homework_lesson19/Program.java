@@ -1,5 +1,6 @@
 package homework_lesson19;
 
+/* Описание (2026): минимальный пример создания потока из лямбды Runnable; без join() главный поток завершается раньше дочернего "MyThread". */
 public class Program {
 	  
     public static void main(String[] args) {

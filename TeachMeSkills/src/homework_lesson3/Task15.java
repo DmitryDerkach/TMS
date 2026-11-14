@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9 и "сжимает" его: обнуляет все элементы с нечётными индексами, затем выводит результат. */
 public class Task15 {
 public static void main(String[] args) {
 	

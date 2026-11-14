@@ -1,5 +1,6 @@
 package homework_lesson8.taskcloth.shoes;
 
+/* Описание (2026): Обувь Gucci - реализация интерфейса Shoes с ценой; при надевании/снятии выводит соответствующее сообщение. */
 public class GucciShoes implements Shoes {
 	private int priece;
 	

@@ -2,11 +2,13 @@ package homework_lesson11.task2;
 import java.io.FileReader;
 import java.io.IOException;
 
+/* Описание (2026): читает текст из файла task2fileN1 посимвольно (FileReader), разбивает его на предложения по знакам '.', '!' и '?' и передаёт каждое предложение в TextFormater.checkIn() для фильтрации и записи в task2fileN2. */
 public class Application  {
 	public static void main(String[] args) {
 			FileReader fr1 = null;
 			try { 
-			fr1 = new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN1");
+			// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+			fr1 = new FileReader("src/homework_lesson11/task2/task2fileN1");
 			/*Предложения разделяются точкой, восклицательным или вопросительным знаком*/
 			int a = 0;/*Вспомогательный счетчик*/
 			int counter = 0; /*Счетчик, который крутит длинну массива*/
@@ -28,7 +30,8 @@ public class Application  {
 			a = 0;
 			int i = 0;
 			fr1.close();
-			fr1 = new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN1");
+			// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+			fr1 = new FileReader("src/homework_lesson11/task2/task2fileN1");
 				try {
 					while ((a = fr1.read()) != -1) { 
 						if (((char)a != '!') && ((char)a != '?') && ((char)a != '.')) {
@@ -51,8 +54,9 @@ public class Application  {
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
+				// fix 2026: проверка на null перед close() - если файл не открылся, раньше здесь падал NullPointerException
 				try {
-					fr1.close();
+					if (fr1 != null) fr1.close();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой с клавиатуры длины из случайных чисел от 0 до 9 и вычисляет произведение элементов, кратных трём (ноль не учитывается). */
 public class Task11 {
 public static void main(String[] args) {
 //Creation of the array with n length and filling it with random num-s from 0 to 9

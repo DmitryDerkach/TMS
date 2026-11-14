@@ -1,5 +1,6 @@
 package homework_lesson7.transporttask;
 
+/* Описание (2026): Легковой автомобиль - наследник LandTransport с типом кузова и числом пассажиров; additionalinfo(time) печатает, сколько км он проедет за заданное время на максимальной скорости и сколько израсходует топлива. */
 public class LightTransport extends LandTransport{
 	private String bodytype;
 	private int numofpassangers;

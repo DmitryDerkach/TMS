@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9, считывает с клавиатуры число и подсчитывает, сколько раз оно встречается в массиве. */
 public class Task17 {
 public static void main(String[] args) {
 	

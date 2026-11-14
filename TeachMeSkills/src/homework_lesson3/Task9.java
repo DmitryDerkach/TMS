@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Считывает с клавиатуры длину массива (с проверкой на целое неотрицательное), заполняет его случайными числами от 0 до 15 и сравнивает суммы левой и правой половин (при нечётной длине средний элемент не учитывается). */
 public class Task9 {
 public static void main(String[] args) {
 	

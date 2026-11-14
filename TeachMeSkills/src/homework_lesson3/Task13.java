@@ -2,6 +2,7 @@ package homework_lesson3;
 //This is solution for the Task #14.
 import java.util.Random;
 import java.util.Scanner;
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9 и находит наименьший нечётный элемент (если нечётных нет, выводится максимум массива). */
 public class Task13 {
 public static void main(String[] args) {
 

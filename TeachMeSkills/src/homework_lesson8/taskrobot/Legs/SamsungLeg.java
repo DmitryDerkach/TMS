@@ -1,5 +1,6 @@
 package homework_lesson8.taskrobot.Legs;
 
+/* Описание (2026): Нога робота Samsung - реализация ILeg с ценой; step() выводит "Шаг ногой Самсунг". */
 public class SamsungLeg implements ILeg {
 	private int priece;
 	

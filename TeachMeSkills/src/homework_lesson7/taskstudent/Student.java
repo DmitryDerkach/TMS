@@ -1,5 +1,6 @@
 package homework_lesson7.taskstudent;
 
+/* Описание (2026): Студент: имя, фамилия, группа и средний балл (protected, доступен наследнику); getScholarship() возвращает 100 при среднем балле 5.0, иначе 80. */
 public class Student {
 	private String firstName;
 	private String lastName;

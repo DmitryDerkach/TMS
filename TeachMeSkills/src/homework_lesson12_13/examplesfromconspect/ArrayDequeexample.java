@@ -2,6 +2,7 @@ package homework_lesson12_13.examplesfromconspect;
 
 import java.util.ArrayDeque;
 
+/* Описание (2026): пример из конспекта по двусторонней очереди ArrayDeque — добавление в начало/конец (add, addFirst, addLast, offer, push), просмотр (peekFirst, peekLast, peek) и извлечение элементов методом pop. */
 public class ArrayDequeexample {
     public static void main(String[] args) {
         ArrayDeque <String> states = new ArrayDeque<>();

@@ -1,5 +1,6 @@
 package homework_lesson7.taskanimal;
 
+/* Описание (2026): Абстрактный базовый класс животного для задачи "Ветеринар": общие поля food и location, абстрактные методы makeNoise() и eat(), общий метод sleep(). Наследники - Dog, Cat, Horse. */
 public abstract class Animal {
 	private String food;
 	private String location;

@@ -1,6 +1,7 @@
 package homework_lesson9.poverovdima;
 
 
+/* Описание (2026): Вспомогательный класс с тремя полями (int, double, String) и переопределённым toString(); используется в Application для демонстрации String.valueOf(Object). */
 public class TestClass {
 
     int a;

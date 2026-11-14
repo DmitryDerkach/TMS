@@ -1,5 +1,6 @@
 package homework_lesson8.taskcloth.jacket;
 
+/* Описание (2026): Куртка Gucci - реализация интерфейса Jacket с ценой; при надевании/снятии выводит соответствующее сообщение. */
 public class GucciJacket implements Jacket {
 	private int priece;
 	

@@ -1,5 +1,6 @@
 package homework_lesson16;
 
+/* Описание (2026): заглушка-заметка к уроку по нововведениям Java 9-12 (var, модули, новые API), кода нет. */
 public class Note {
 	/*
 	 * 15. Основные изменения в Java 9-12 var Modules Обзор нового API и

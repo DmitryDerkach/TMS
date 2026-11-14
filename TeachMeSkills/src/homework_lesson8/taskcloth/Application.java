@@ -6,6 +6,7 @@ import homework_lesson8.taskcloth.pants.ArmaniPants;
 import homework_lesson8.taskcloth.shoes.ArmaniShoes;
 import homework_lesson8.taskcloth.shoes.GucciShoes;
 
+/* Описание (2026): Задача "Человек и одежда": создаёт двух людей, одевает их в куртку, штаны и обувь брендов Armani/Gucci через интерфейсы, вызывает одеться/раздеться и считает общую стоимость. Демонстрирует полиморфизм через интерфейсы и явное приведение типа для вызова setPriece(). */
 public class Application {
 
 	public static void main(String[] args) {

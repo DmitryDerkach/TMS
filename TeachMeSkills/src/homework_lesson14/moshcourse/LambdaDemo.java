@@ -1,5 +1,6 @@
 package homework_lesson14.moshcourse;
 
+/* Описание (2026): демонстрирует три способа передать реализацию Printer в метод greet(): именованный класс, анонимный класс (закомментированы) и лямбда-выражение; показывает, что this в лямбде ссылается на объект LambdaDemo (поле prefix). */
 public class LambdaDemo {
 	//public static String prefixV2 = "+";
 	 /*Local variable*/

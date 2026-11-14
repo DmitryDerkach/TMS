@@ -1,5 +1,6 @@
 package homework_lesson7.taskshape;
 
+/* Описание (2026): Круг - наследник Shape с радиусом и координатами центра; реализует draw() (печатает параметры и цвет) и переопределяет equals/hashCode с учетом полей родителя. */
 public class Circle extends Shape {
 	private int rad;
 	private int centx;

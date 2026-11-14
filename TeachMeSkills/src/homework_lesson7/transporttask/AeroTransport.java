@@ -1,5 +1,6 @@
 package homework_lesson7.transporttask;
 
+/* Описание (2026): Воздушный транспорт - наследник Transport с размахом крыльев и минимальной длиной взлетной полосы; родитель для CivilAeroTransport и MilitaryAeroTransport. */
 public class AeroTransport extends Transport {
 	private int wingsize;
 	private int minairstripcapacity;

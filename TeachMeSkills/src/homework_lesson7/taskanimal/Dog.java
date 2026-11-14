@@ -1,5 +1,6 @@
 package homework_lesson7.taskanimal;
 
+/* Описание (2026): Наследник Animal в задаче "Ветеринар": собака с дополнительным полем numofwoncompetition (число выигранных соревнований), переопределяет makeNoise() и eat(). */
 public class Dog extends Animal {
 	private int numofwoncompetition;
 	

@@ -4,6 +4,7 @@ import homework_lesson8.taskrobot.Hands.IHand;
 import homework_lesson8.taskrobot.Heads.IHead;
 import homework_lesson8.taskrobot.Legs.ILeg;
 
+/* Описание (2026): Робот из трёх деталей, заданных через интерфейсы IHead, IHand, ILeg. getPrice() печатает суммарную цену деталей, action() вызывает действие каждой детали (говорить, поднять руку, шагнуть) и сообщает об отсутствующих (null) деталях. */
 public class Robot {
 	private IHand hand;
 	private IHead head;

@@ -1,5 +1,6 @@
 package homework_lesson9.poverovdima;
 
+/* Описание (2026): Шпаргалка по методам класса String: на тестовых строках по очереди показывает concat, valueOf, join, compareTo, charAt, getChars, equals/equalsIgnoreCase, regionMatches, indexOf, startsWith/endsWith, replace, trim/strip, substring, toLowerCase/toUpperCase. Заодно демонстрирует неизменяемость строк (concat/replace не меняют исходную строку). */
 public class Application {
 
     public static void main(String[] args) {

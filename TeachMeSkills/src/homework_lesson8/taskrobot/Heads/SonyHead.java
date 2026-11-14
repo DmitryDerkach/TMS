@@ -1,5 +1,6 @@
 package homework_lesson8.taskrobot.Heads;
 
+/* Описание (2026): Голова робота Sony - реализация IHead с ценой; speek() выводит "Говорит голова Сони". */
 public class SonyHead implements IHead{
 	private int price;
 	

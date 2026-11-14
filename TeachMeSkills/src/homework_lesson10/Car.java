@@ -2,6 +2,7 @@ package homework_lesson10;
 
 import java.util.Random;
 
+/* Описание (2026): Модель машины (марка, скорость, цена). Метод start() берёт случайное число 0..20: если оно чётное, бросает проверяемое исключение MyExeption, иначе выводит, что машина успешно завелась. */
 public class Car {
 	private String label;
 	private int speed;

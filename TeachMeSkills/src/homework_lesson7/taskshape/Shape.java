@@ -1,5 +1,6 @@
 package homework_lesson7.taskshape;
 /*+*/
+/* Описание (2026): Абстрактная фигура: хранит цвет, объявляет абстрактный метод draw() и переопределяет equals/hashCode по цвету. Наследники - Circle и Rectangle. */
 public abstract class Shape {
 	private String color;
 	

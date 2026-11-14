@@ -1,5 +1,6 @@
 package homework_lesson5.taskphone;
 
+/* Описание (2026): Точка входа задачи "Телефон": создаёт три объекта Phone разными конструкторами, выводит информацию о них, вызывает входящие звонки и отправку сообщений на несколько номеров. */
 public class PhoneApplication {
 public static void main(String[] args) {
 	

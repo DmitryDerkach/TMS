@@ -1,5 +1,6 @@
 package homework_lesson7.transporttask;
 
+/* Описание (2026): Наземный транспорт - наследник Transport с количеством колес и расходом топлива; родитель для LightTransport и FreightTransport. */
 public class LandTransport extends Transport{
 	private int wheelnum;
 	private int fuelconsumptionrate;

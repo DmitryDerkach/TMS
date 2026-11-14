@@ -1,5 +1,6 @@
 package homework_lesson6.taskperson;
 
+/* Описание (2026): Проверка класса Person: один объект создается пустым конструктором и заполняется сеттерами, второй - конструктором с параметрами; оба выводят информацию о себе. */
 public class PersonApplication {
 	public static void main(String[] args) {
 		

@@ -2,6 +2,7 @@ package homework_lesson3;
 
 import java.util.Random;
 
+/* Описание (2026): Создаёт массив из 12 случайных чисел от 0 до 15, находит максимальный элемент и выводит все индексы, на которых он встречается. */
 public class Task7 {
 public static void main(String[] args) {
 
@@ -17,7 +18,7 @@ System.out.println("Array with lenght 12 contains nim-s from 0 to 15");
 	}
 
 System.out.println();	
-//���� ���������� ������� � ������
+//Ищем наибольший элемент в массив
 	int max = mass[0];
 	for(int i = 0; i<mass.length; i++) {
 		if (mass[i]>max) {

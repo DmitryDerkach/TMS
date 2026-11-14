@@ -8,6 +8,7 @@ import homework_lesson8.taskrobot.Heads.SonyHead;
 import homework_lesson8.taskrobot.Heads.ToshibaHead;
 import homework_lesson8.taskrobot.Legs.SamsungLeg;
 
+/* Описание (2026): Задача "Робот": собирает роботов из головы, руки и ноги производителей Samsung/Sony/Toshiba через интерфейсы, выводит цену сборки и действия робота. Показаны три способа задать цену детали: через конструктор, через сеттер перед setHead() и через явное приведение типа детали, полученной из робота. */
 public class Application {
 	public static void main(String[] args) {
 		/*Задаем значения цены через конструктор (реализовано)*/ 

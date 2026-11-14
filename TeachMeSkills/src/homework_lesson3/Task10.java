@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Считывает число N > 3, создаёт массив длины N из случайных чисел от 0 до N и пытается вывести второй массив из его чётных элементов (в сообщении сказано "odd", но отбираются чётные, включая 0; второй массив на деле не сохраняется). */
 public class Task10 {
 public static void main(String[] args) {
 	
@@ -28,11 +29,11 @@ System.out.println("Generated array: ");
 	System.out.println();
 
 System.out.print("Generating array #2 that contains only odd num-s from array #1: ");
-int j = 0;// ������� � ������� � 2
-int k = 1;// ������ ������� �2
+int j = 0;// Индексы в массиве № 2
+int k = 1;// Размер массива №2
 	for (int i = 0; i<mass.length; i++) {
 		mark:if(mass[i] % 2 == 0) {
-			for(int z = 0; z<mass.length;) {   						//��� ������ ����� ������ ������� ����� ���� ���������
+			for(int z = 0; z<mass.length;) {   						//Тут вообще какое угодно условие можно было прописать
 				int [] mass2 = new int[k];
 				mass2[j] = mass[i];
 				System.out.print(mass2[j] + " ");
@@ -44,7 +45,7 @@ int k = 1;// ������ ������� �2
 	}
 //k = k-1;
 //System.out.println();
-//int [] mass2 = new int[k];										//������, ������� � ����� �� ����������� ������
+//int [] mass2 = new int[k];										//Массив, который в цикле не переносится дальше
 //System.out.println("Check");
 //System.out.println(k);
 //for(int i = 0; i<mass2.length; i++)

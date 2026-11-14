@@ -1,5 +1,6 @@
 package homework_lesson6.taskreader;
 
+/* Описание (2026): Перечисление с тремя номерами читательских билетов для задачи про библиотеку; getTicket(i) возвращает i-й номер при заполнении массива Reader в цикле. */
 public enum Ticket {
 	TICKET1(1),
 	TICKET2(2),

@@ -1,5 +1,6 @@
 package homework_lesson8.taskseasons;
 
+/* Описание (2026): Задача "Времена года": перебирает все значения enum Seasons, выводя описание сезона со средней температурой и пометку "тёплое/холодное время года", затем через switch печатает "Я люблю весну". */
 public class Application {
 public static void main(String[] args) {
 	Seasons s0 = Seasons.SPRING;

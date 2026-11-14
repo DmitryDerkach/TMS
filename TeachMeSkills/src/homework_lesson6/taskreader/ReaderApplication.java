@@ -2,6 +2,7 @@ package homework_lesson6.taskreader;
 
 import java.util.Random;
 import homework_lesson6.taskreader.Book;
+/* Описание (2026): Задача "Читатель библиотеки": создает массив из трех Reader, заполняя поля значениями из перечислений Name/Ticket/Faculty/Birthday/PhoneNum, выводит их и вызывает перегруженные takeBook/returnBook с числом, строками и объектами Book. */
 public class ReaderApplication {	
 public static void main(String[] args) {
 /*Создаем 3 объекта класса Book*/

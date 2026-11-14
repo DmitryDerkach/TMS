@@ -1,5 +1,6 @@
 package homework_lesson7.taskshop;
 
+/* Описание (2026): Пользователь магазина: логин, пароль и своя корзина Basket; wantToBuy кладет товар в корзину, displayBasket показывает ее, printInfo выводит логин. */
 public class User {
 	private String login;
 	private String password;

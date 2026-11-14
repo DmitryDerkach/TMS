@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9 и вложенными циклами проверяет, есть ли в нём одинаковые элементы. */
 public class Task16 {
 public static void main(String[] args) {
 	

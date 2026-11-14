@@ -6,6 +6,7 @@ import homework_lesson7.taskcar.Driver.Person;
 import homework_lesson7.taskcar.Engine.Engine;
 import homework_lesson7.taskcar.Car.SportCar;
 
+/* Описание (2026): Задача про автомобили (наследование и композиция, классы разложены по подпакетам Car/Driver/Engine): создает три двигателя и трех водителей, затем обычную машину, грузовик и спорткар через ссылку типа Car и выводит информацию о каждом. */
 public class CarApplication {
 	public static void main(String[] args) {
 		Engine en1 = new Engine (450, "Boing");

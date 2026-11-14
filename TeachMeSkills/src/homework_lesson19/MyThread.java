@@ -1,5 +1,6 @@
 package homework_lesson19;
 
+/* Описание (2026): конспект-пример по потокам: информация о главном потоке, запуск потоков через наследника Thread (JThread), ожидание через join(), реализация Runnable (сам MyThread), анонимный класс Runnable и лямбда. */
 public class MyThread implements Runnable{
 
 	public static void main(String[] args) {

@@ -1,5 +1,6 @@
 package homework_lesson7.transporttask;
 
+/* Описание (2026): Военный самолет - наследник AeroTransport с признаком наличия системы катапультирования и количеством ракет. */
 public class MilitaryAeroTransport extends AeroTransport {
 	private boolean catapultsystemavaiability;
 	private int numofrocketsavaiable;

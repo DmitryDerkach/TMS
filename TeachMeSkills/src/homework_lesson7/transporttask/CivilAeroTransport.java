@@ -1,5 +1,6 @@
 package homework_lesson7.transporttask;
 
+/* Описание (2026): Гражданский самолет - наследник AeroTransport с числом пассажиров и признаком наличия бизнес-класса. */
 public class CivilAeroTransport extends AeroTransport {
 	private int numofpassangers;
 	private boolean buisnessclassaviability;

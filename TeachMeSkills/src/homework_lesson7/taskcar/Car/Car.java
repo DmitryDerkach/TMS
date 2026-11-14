@@ -4,6 +4,7 @@ import homework_lesson7.taskcar.Driver.Driver;
 import homework_lesson7.taskcar.Driver.Person;
 import homework_lesson7.taskcar.Engine.Engine;
 
+/* Описание (2026): Базовый класс автомобиля в задаче про машины: марка, класс, вес, водитель (Person) и двигатель (Engine) - композиция объектов. Методы start/stop/turnRight/turnLeft печатают действия, printInfo выводит toString с данными водителя и двигателя. */
 public class Car {
 	private String marka;
 	private String carClass;

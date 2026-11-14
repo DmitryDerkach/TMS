@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9, находит максимальный элемент и меняет его местами с элементом под индексом 0, затем выводит массив. */
 public class Task20 {
 public static void main(String[] args) {
 

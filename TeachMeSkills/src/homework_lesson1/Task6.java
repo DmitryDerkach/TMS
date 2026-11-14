@@ -1,5 +1,5 @@
 package homework_lesson1;
-//Даны 2 числа. Вывести большее из них.
+//Р”Р°РЅС‹ 2 С‡РёСЃР»Р°. Р’С‹РІРµСЃС‚Рё Р±РѕР»СЊС€РµРµ РёР· РЅРёС….
 public class Task6 {
 	public static void main(String[] args) {
 		int a = 2;
@@ -12,7 +12,7 @@ public class Task6 {
 				System.out.println(b);
 			}
 			else {
-				System.out.println("Числа равны между собой");
+				System.out.println("Р§РёСЃР»Р° СЂР°РІРЅС‹ РјРµР¶РґСѓ СЃРѕР±РѕР№");
 			}
 		}
 	}

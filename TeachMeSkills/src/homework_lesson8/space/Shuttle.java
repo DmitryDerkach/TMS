@@ -2,6 +2,7 @@ package homework_lesson8.space;
 
 import java.util.Random;
 
+/* Описание (2026): Шаттл - реализация IStart. systemCheck() случайно проходит или проваливается (успех, если случайное число 0..10 больше 3), engineStart() и start() выводят сообщения в консоль. */
 public class Shuttle implements IStart {
 	@Override
 	public boolean systemCheck() {

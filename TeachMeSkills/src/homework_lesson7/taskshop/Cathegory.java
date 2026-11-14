@@ -1,5 +1,6 @@
 package homework_lesson7.taskshop;
 
+/* Описание (2026): Категория товаров в задаче про магазин: название и массив Product; printProducts выводит все товары категории. */
 public class Cathegory {
 private String chategoryname;
 private Product [] product;

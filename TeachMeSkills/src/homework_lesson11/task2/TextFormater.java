@@ -3,6 +3,7 @@ package homework_lesson11.task2;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/* Описание (2026): вспомогательный класс к task2 — дописывает предложение в файл task2fileN2, если в нём от 3 до 5 слов (основное условие) либо есть слово-палиндром длиннее 4 символов (дополнительное условие, метод paliCheck); иначе выводит сообщение, что предложение отброшено. */
 public class TextFormater {
 	private static char [][] arrayofchars = null;/*Помещаем сюда, чтобы наш массив был доступен из любого метода*/
 	private static int counter = 0;
@@ -10,7 +11,8 @@ public class TextFormater {
 	public static void checkIn(String s){
 		FileWriter fw1 = null;
 	try {
-		fw1= new FileWriter("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task2\\task2fileN2", true);
+		// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		fw1= new FileWriter("src/homework_lesson11/task2/task2fileN2", true);
 		arrayofchars = new char[1][s.toCharArray().length]; /*Наш двумерный массив, в 0 строку которого
 		нужно передать целый текст,разложенный в символы*/
 		arrayofchars[0] = s.toCharArray();
@@ -54,8 +56,9 @@ public class TextFormater {
 		e.printStackTrace();
 		System.out.println("Проблема с записью в файл #1");
 	} finally {
+		// fix 2026: проверка на null перед close() - если файл не открылся, раньше здесь падал NullPointerException
 		try {
-			fw1.close();
+			if (fw1 != null) fw1.close();
 		} catch (IOException e) {
 			System.out.println("Проблема с записью в файл #2");
 		}

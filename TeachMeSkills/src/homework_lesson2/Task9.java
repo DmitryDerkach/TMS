@@ -1,5 +1,5 @@
 package homework_lesson2;
-//Вывести треугольник №2
+//Р’С‹РІРµСЃС‚Рё С‚СЂРµСѓРіРѕР»СЊРЅРёРє в„–2
 public class Task9 {
 	public static void main(String[] args) {
 		

@@ -1,5 +1,6 @@
 package homework_lesson7.taskshape;
 
+/* Описание (2026): Прямоугольник - наследник Shape с координатами центра, шириной и длиной; реализует draw() (печатает параметры и цвет) и переопределяет equals/hashCode. */
 public class Rectangle extends Shape{
 	private int centerx;
 	private int centery;

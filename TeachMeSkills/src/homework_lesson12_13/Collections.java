@@ -1,6 +1,7 @@
 package homework_lesson12_13;
 /*Коллекции*/
 import java.util.*;
+/* Описание (2026): конспект-введение в коллекции без исполняемого кода — в main только теоретические заметки об интерфейсе Collection и списке популярных коллекций (ArrayList, LinkedList, ArrayDeque, HashSet, TreeSet, HashMap и др.). */
 public class Collections /*implements Collection<E> - можно чекнуть методы*/{
 	public static void main(String[] args) {
 		/*

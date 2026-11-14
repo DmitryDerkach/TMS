@@ -1,5 +1,6 @@
 package homework_lesson7.transporttask;
 
+/* Описание (2026): Грузовой транспорт - наследник LandTransport с грузоподъемностью. */
 public class FreightTransport extends LandTransport {
 	private int carryingcapacity;
 

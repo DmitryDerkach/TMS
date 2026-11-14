@@ -1,5 +1,6 @@
 package homework_lesson8.taskclothes;
 
+/* Описание (2026): Ателье со статическими методами dressWoman()/dressMan(): перебирают массив одежды и через instanceof выводят только вещи, реализующие WomanCloth или ManCloth соответственно. */
 public class Atelier{
 	private static Clothes [] cl = null;
 		public static void dressWoman(Clothes [] arrayofcloth) {

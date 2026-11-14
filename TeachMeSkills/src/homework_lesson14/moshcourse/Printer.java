@@ -1,5 +1,6 @@
 package homework_lesson14.moshcourse;
 
+/* Описание (2026): функциональный интерфейс с одним абстрактным методом print(String); default-метод printTwice и static-метод testMethod показывают, что они не мешают интерфейсу оставаться функциональным. */
 public interface Printer {
 	void print(String message); // This is functional interface
 	

@@ -1,5 +1,6 @@
 package homework_lesson8.taskrobot.Legs;
 
+/* Описание (2026): Нога робота Sony - реализация ILeg с ценой; step() выводит "Шаг ногой Сони". */
 public class SonyLeg implements ILeg{
 	private int priece;
 	

@@ -7,10 +7,12 @@ public class Note {
 		FileInputStream fileIn = null;
 		FileOutputStream fileOut = null;
 		try {
-		fileIn = new FileInputStream("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\fileN1.txt"); /*Если файл не был создан, то выбьет ошибку FileNotFound exeption*/
+		// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		fileIn = new FileInputStream("src/homework_lesson11/fileN1.txt"); /*Если файл не был создан, то выбьет ошибку FileNotFound exeption*/
 /*Если создать файл в другом проекте, то он не будет обнаружен, но если создать файл в нужном нам проекте, и не обязательно в нужном нам 
  *пэкэжджэ, то он его найдет*/		
-		fileOut = new FileOutputStream("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\copied_fileN1.txt"); /*Даже если такого файла нет, то ошибку не выбивает, происходит автосоздание
+		// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		fileOut = new FileOutputStream("src/homework_lesson11/copied_fileN1.txt"); /*Даже если такого файла нет, то ошибку не выбивает, происходит автосоздание
 файла с таким именем. Чтобы его увидеть, нужно нажать на проекте F5 или использовать функцию рефреш*/
 		int a;
 /*Копируем содержимое файла file.txt*/
@@ -36,8 +38,10 @@ public class Note {
 FileReader fileR = null;
 FileWriter fileW = null;
 	try {
-		fileR  = new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\fileN2.txt");
-		fileW = new FileWriter("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\copied_fileN2.txt");
+		// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		fileR  = new FileReader("src/homework_lesson11/fileN2.txt");
+		// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		fileW = new FileWriter("src/homework_lesson11/copied_fileN2.txt");
 		int a = 0;
 		while ((a = fileR.read()) != -1) {
 			fileW.write(a);
@@ -53,7 +57,8 @@ FileWriter fileW = null;
 /*BufferedWritter*/	
 	BufferedWriter buffW = null;
 	try {
-		buffW = new BufferedWriter(new FileWriter("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\copied_fileN3.txt"));
+		// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		buffW = new BufferedWriter(new FileWriter("src/homework_lesson11/copied_fileN3.txt"));
 		String text = "Hello. My name is Dima. Right now i am learning java. It's quite difficult but i hope everthing will be okay";
 		buffW.write(text);
 	} catch (IOException e) {
@@ -64,7 +69,8 @@ FileWriter fileW = null;
 /*BufferedReader*/
 	BufferedReader buffR = null;
 	try {
-		buffR = new BufferedReader(new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\copied_fileN3.txt"));
+		// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+		buffR = new BufferedReader(new FileReader("src/homework_lesson11/copied_fileN3.txt"));
 		int a = 0;
 		//String a = null; 
 		System.out.println(); 
@@ -154,7 +160,8 @@ FileWriter fileW = null;
 	 */
 	
 	 // определяем объект для каталога
-    File dir = new File("C:\\repositories\\TMS\\TeachMeSkills");
+    // fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+    File dir = new File(".");
     // если объект представляет каталог
     if(dir.isDirectory())
     {
@@ -173,7 +180,8 @@ FileWriter fileW = null;
     }
     
 /*Пример сериализации, десериализации*/    
-    File serialization = new File("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\serilazation.txt");
+    // fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+    File serialization = new File("src/homework_lesson11/serilazation.txt");
 	serialization.createNewFile();
 try{
 //	System.out.println(serialization.getAbsoluteFile().toString());

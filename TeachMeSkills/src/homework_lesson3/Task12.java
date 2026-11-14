@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9 и считает среднее арифметическое элементов с нечётными индексами (1, 3, 5, ...). */
 public class Task12 {
 public static void main(String[] args) {
 	

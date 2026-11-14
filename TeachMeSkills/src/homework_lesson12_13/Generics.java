@@ -1,5 +1,6 @@
 package homework_lesson12_13;
 /*Дженерики*/
+/* Описание (2026): демонстрация обобщений (generics) на локальных классах: обобщённый класс Account<T>, обобщённый метод Printer.print(T[]) и класс Account1<T,S> с двумя параметрами типа. */
 public class Generics {
 	public static void main(String[] args) {
 		

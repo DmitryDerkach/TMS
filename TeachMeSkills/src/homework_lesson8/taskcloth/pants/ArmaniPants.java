@@ -1,5 +1,6 @@
 package homework_lesson8.taskcloth.pants;
 
+/* Описание (2026): Штаны Armani - реализация интерфейса Pants с ценой; при надевании/снятии выводит соответствующее сообщение. */
 public class ArmaniPants implements Pants{
 	private int priece;
 	

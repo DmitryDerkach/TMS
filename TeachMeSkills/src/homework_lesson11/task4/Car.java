@@ -2,6 +2,7 @@ package homework_lesson11.task4;
 
 import java.io.Serializable;
 
+/* Описание (2026): модель автомобиля (марка, скорость, цена) для task4; реализует Serializable, чтобы объекты можно было записывать в файл и читать обратно. */
 public class Car implements Serializable{
 	private String label;
 	private int speed;

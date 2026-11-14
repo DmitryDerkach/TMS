@@ -4,6 +4,7 @@ import homework_lesson8.taskcloth.jacket.Jacket;
 import homework_lesson8.taskcloth.pants.Pants;
 import homework_lesson8.taskcloth.shoes.Shoes;
 
+/* Описание (2026): Человек с именем и тремя вещами, заданными через интерфейсы Jacket, Pants, Shoes. dressUp()/dressDown() по очереди надевают/снимают все вещи, totalCost() выводит их суммарную цену. */
 public class Human {
 	private String name;
 	private Jacket j;

@@ -4,6 +4,7 @@ package homework_lesson4;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт квадратную матрицу введённого размера из случайных чисел от 0 до 50 и выводит нечётные элементы под главной диагональю - сначала без элементов диагонали, затем включая их. */
 public class Task2 {
 public static void main(String[] args) {
 	

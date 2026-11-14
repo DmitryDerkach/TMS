@@ -1,5 +1,6 @@
 package homework_lesson5.taskphone;
 
+/* Описание (2026): Класс "Телефон" (номер, модель, вес) с тремя конструкторами (один вызывает другой через this), геттерами/сеттерами, перегруженным методом reciveCall и методом sendMessage с переменным числом аргументов. */
 public class Phone {
 private	int number;
 private	String model;

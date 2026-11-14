@@ -3,12 +3,14 @@ package homework_lesson11.task3;
 import java.io.FileReader;
 import java.io.IOException;
 
+/* Описание (2026): цензура текста — читает список запрещённых слов из файла blacklist, затем проверяет каждое предложение из text.txt и выводит, прошло ли оно цензуру. Слова сравниваются по "коду" — сумме кодов символов слова (упрощённое сравнение, возможны ложные совпадения). */
 public class Application {
 	public static void main(String[] args) {
 		FileReader fr1 = null;
 		FileReader fr2 = null;
 		try {
-			fr2 = new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task3\\blacklist");/*Читем запрещенку*/
+			// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+			fr2 = new FileReader("src/homework_lesson11/task3/blacklist");/*Читем запрещенку*/
 			int a = 0;/*счетчик№1*/
 			int z = 0;/*счетчик№2*/
 			int[] array = new int [10]; /*Массив, в ячейках которого будет лежать "код" запрещенки*/
@@ -24,7 +26,8 @@ public class Application {
 			}
 			arraycounter = arraycounter-1;
 			/*Теперь надо прочесть наш текст на наличие запрещенки*/
-			fr1 = new FileReader("C:\\repositories\\TMS\\TeachMeSkills\\src\\homework_lesson11\\task3\\text.txt"); 
+			// fix 2026: абсолютный путь C:\repositories\TMS\TeachMeSkills\... заменён на относительный (запускать из папки TeachMeSkills)
+			fr1 = new FileReader("src/homework_lesson11/task3/text.txt"); 
 			a = 0;
 			z = 0;
 			int triggernum = 0;
@@ -63,9 +66,10 @@ public class Application {
 			e.printStackTrace();
 			System.out.println("Trace #1");
 		} finally {
+			// fix 2026: проверка на null перед close() - если файл не открылся, раньше здесь падал NullPointerException
 			try {
-				fr1.close();
-				fr2.close();
+				if (fr1 != null) fr1.close();
+				if (fr2 != null) fr2.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

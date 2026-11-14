@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9, находит максимальный элемент и следующее за ним по величине значение (второй максимум). */
 public class Task18 {
 public static void main(String[] args) {
 

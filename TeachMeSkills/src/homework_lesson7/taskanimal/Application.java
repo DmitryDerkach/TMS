@@ -1,5 +1,6 @@
 package homework_lesson7.taskanimal;
 
+/* Описание (2026): Задача "Ветеринар" (наследование и полиморфизм): создает собаку, кошку и лошадь как ссылки типа Animal, складывает их в массив и передает каждое животное в Vet.treatAnimal. */
 public class Application {
 public static void main(String[] args) {
 	Animal Dog = new Dog("Собачий корм", "Вольер", 3);

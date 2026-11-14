@@ -1,5 +1,6 @@
 package homework_lesson7.transporttask;
 
+/* Описание (2026): Корневой класс иерархии транспорта: мощность, максимальная скорость, вес и марка с геттерами/сеттерами и toString. Наследники - LandTransport и AeroTransport. */
 public class Transport {
 private int power;
 private int maxspeed;

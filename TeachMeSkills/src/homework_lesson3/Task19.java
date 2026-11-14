@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9 и находит наименьший среди элементов с чётными индексами (0, 2, 4, ...). */
 public class Task19 {
 public static void main(String[] args) {
 	

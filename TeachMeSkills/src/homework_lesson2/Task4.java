@@ -1,5 +1,5 @@
 package homework_lesson2;
-//Составьте программу, вычисляющую А*В, не пользуясь операцией умножения.
+//РЎРѕСЃС‚Р°РІСЊС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ, РІС‹С‡РёСЃР»СЏСЋС‰СѓСЋ Рђ*Р’, РЅРµ РїРѕР»СЊР·СѓСЏСЃСЊ РѕРїРµСЂР°С†РёРµР№ СѓРјРЅРѕР¶РµРЅРёСЏ.
 public class Task4 {
 	public static void main(String[] args) {
 		
@@ -9,20 +9,20 @@ public class Task4 {
 		int sum = 0;
 	    
 		if ((a==0) || (b==0)){
-			System.out.printf("%d умножить на %d равно 0",a,b);
+			System.out.printf("%d СѓРјРЅРѕР¶РёС‚СЊ РЅР° %d СЂР°РІРЅРѕ 0",a,b);
 		} else {
 			for (c=1; c<=Math.abs(b); c++) {
 				sum = sum + a;
-				//System.out.printf("%d умножить на %d равно %d   \n",a,c,sum);
+				//System.out.printf("%d СѓРјРЅРѕР¶РёС‚СЊ РЅР° %d СЂР°РІРЅРѕ %d   \n",a,c,sum);
 			}
 				sum = Math.abs(sum);
 				
 			    if (((a>0)&&(b>0))||((a<0)&&(b<0))) {
 			    	
-			    System.out.printf("%d умножить на %d равно %d   \n",a,b,sum);
+			    System.out.printf("%d СѓРјРЅРѕР¶РёС‚СЊ РЅР° %d СЂР°РІРЅРѕ %d   \n",a,b,sum);
 			    
 			    } else {
-			    System.out.printf("%d умножить на %d равно -%d   \n",a,b,sum);
+			    System.out.printf("%d СѓРјРЅРѕР¶РёС‚СЊ РЅР° %d СЂР°РІРЅРѕ -%d   \n",a,b,sum);
 			    }
 			    
 				}

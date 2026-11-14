@@ -3,6 +3,7 @@ package homework_lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
+/* Описание (2026): Создаёт массив введённой длины из случайных чисел от 0 до 9, считывает число C и находит, сколько первых элементов нужно взять, чтобы их среднее арифметическое превысило C. */
 public class Task14 {
 public static void main(String[] args) {
 	

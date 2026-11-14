@@ -1,5 +1,6 @@
 package homework_lesson8.taskprintable;
 
+/* Описание (2026): Книга - реализация Printable: print() выводит "Book"; статический printBooks() выводит из массива Printable только объекты Book (через instanceof). */
 public class Book implements Printable{
 	public void print() {
 		System.out.println("Book"); 

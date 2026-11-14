@@ -1,5 +1,6 @@
 package homework_lesson8.taskcloth.pants;
 
+/* Описание (2026): Штаны Gucci - реализация интерфейса Pants с ценой; при надевании/снятии выводит соответствующее сообщение. */
 public class GucciPants implements Pants{
 	private int priece;
 	

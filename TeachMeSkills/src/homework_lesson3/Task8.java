@@ -2,6 +2,7 @@ package homework_lesson3;
 
 import java.util.Random;
 
+/* Описание (2026): Создаёт два массива по 10 случайных чисел от 0 до 9 (нули во втором заменяются на 1), формирует третий массив из частных их элементов и считает, сколько в нём целых значений. */
 public class Task8 {
 public static void main(String[] args) {
 

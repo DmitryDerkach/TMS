@@ -1,5 +1,6 @@
 package homework_lesson6.numcompare;
 import java.util.*;
+/* Описание (2026): Вывод последовательности целых чисел от A до B (по возрастанию или убыванию). Итеративный вариант со Scanner закомментирован, активный вариант вызывает рекурсивный Calc.getSequance(1, -2). */
 public class Application {
 public static void main(String[] args) {
 /*Решение не перегруженное рекрсией*/	

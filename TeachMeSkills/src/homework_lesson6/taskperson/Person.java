@@ -1,5 +1,6 @@
 package homework_lesson6.taskperson;
 
+/* Описание (2026): Класс Person с приватными полями fullName и age, пустым и полным конструктором, геттерами/сеттерами, методами move/talk и выводом информации getInfo. Базовое упражнение на создание класса и инкапсуляцию. */
 public class Person {
 	/*Поля*/
 	private String fullName;

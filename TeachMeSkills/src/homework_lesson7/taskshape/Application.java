@@ -1,5 +1,6 @@
 package homework_lesson7.taskshape;
 
+/* Описание (2026): Задача про фигуры (абстрактный класс и полиморфизм): создает прямоугольник и круг как ссылки типа Shape, кладет их в массив и в цикле вызывает у каждой draw(). */
 public class Application {
 	public static void main(String[] args) {
 	Shape fig1 = new Rectangle("Красный", 2, 2, 5, 10);/*String color, int centx, int centy, int width, int length*/

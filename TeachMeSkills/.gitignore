@@ -1,3 +1,18 @@
-/bin
-/.classpath
-/.project
+# Compiled output
+/bin/
+/out/
+*.class
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# OS / misc
+.DS_Store
+Thumbs.db
+*.log

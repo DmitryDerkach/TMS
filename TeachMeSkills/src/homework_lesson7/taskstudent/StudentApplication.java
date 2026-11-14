@@ -1,5 +1,6 @@
 package homework_lesson7.taskstudent;
 
+/* Описание (2026): Задача "Студент и аспирант" (переопределение методов): в массиве Student лежат и студенты, и аспиранты; в цикле для каждого вызывается getScholarship() и печатается размер стипендии. */
 public class StudentApplication {
 	public static void main(String[] args) {
 		Student first = new Aspirant("Вася", "Пупкин", 1, 4.1, "Джава как смысл жизни");

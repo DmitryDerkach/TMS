@@ -1,5 +1,6 @@
 package homework_lesson8.taskrobot.Heads;
 
+/* Описание (2026): Голова робота Toshiba - реализация IHead с ценой (сеттер setPriece используется в Application после приведения типа); speek() выводит "Говорит голова Тошиба". */
 public class ToshibaHead implements IHead {
 	private int priece;
 	

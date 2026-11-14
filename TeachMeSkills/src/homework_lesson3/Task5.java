@@ -2,6 +2,7 @@ package homework_lesson3;
 /**/
 import java.util.Random;
 
+/* Описание (2026): Создаёт два массива по 5 случайных чисел от 0 до 15, выводит их, считает среднее арифметическое каждого и сообщает, у какого массива оно больше (или что они равны). */
 public class Task5 {
 public static void main(String[] args) {
 

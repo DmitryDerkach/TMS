@@ -1,5 +1,6 @@
 package homework_lesson8.taskclothes;
 
+/* Описание (2026): Задача "Ателье": создаёт массив одежды (галстук, юбка, футболка, брюки) с размером, ценой и цветом и выводит отдельно вещи, подходящие женщинам и мужчинам. Демонстрирует абстрактный класс, интерфейсы, instanceof и enum. */
 public class Application {
 
 	public static void main(String[] args) {

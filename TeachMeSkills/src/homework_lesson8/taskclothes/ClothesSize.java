@@ -1,5 +1,6 @@
 package homework_lesson8.taskclothes;
 
+/* Описание (2026): Перечисление размеров одежды XXS..L с европейским размером (32-40) в конструкторе. Для XXS метод getDescription() переопределён в теле константы ("Детский размер"), для остальных возвращает "Взрослый размер". */
 public enum ClothesSize {
 XXS(32){
 	public String getDescription(){
